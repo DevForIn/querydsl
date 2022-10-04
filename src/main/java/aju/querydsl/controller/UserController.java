@@ -34,7 +34,10 @@ public class UserController {
 	// User Create 
 	@PostMapping("/Users")
 	public void save(User user) {
-		userRepository.save(user);
+		if(!userRepositorySupport.findById(user.getId()).equals(null)){
+			System.out.println("데이터 입력 오류");
+		}
+		else userRepository.save(user);
 	}
 	
 	// User find by id

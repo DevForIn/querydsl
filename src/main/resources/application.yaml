@@ -9,16 +9,10 @@ spring:
     url: jdbc:h2:tcp://localhost/~/test
     username: sa
     password:
-  second-datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/Member
-    username: root  
-    password: 1234
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
   mvc:
     pathmatch:
       matching-strategy: ant-path-matcher
-    
