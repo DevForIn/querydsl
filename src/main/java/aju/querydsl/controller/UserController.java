@@ -3,6 +3,8 @@ package aju.querydsl.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -33,8 +35,14 @@ public class UserController {
 	
 	// User Create 
 	@PostMapping("/Users")
-	public void save(User user) {
+	public ResponseEntity<?> save(User user) {
+		if(user.getId() != null) {
+			if(userRepositorySupport.findById(user.getId()) != null) {
+				return ResponseEntity.notFound().build();
+			}
+		}		
 		userRepository.save(user);
+		return  ResponseEntity.ok().body(user);
 	}
 	
 	// User find by id

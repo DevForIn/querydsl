@@ -13,7 +13,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity @Getter @Setter
+@Entity @Getter 
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="User")
@@ -23,12 +23,15 @@ public class User {
 	@Column(name="ID",nullable =false)
 	private Long id;
 	
+	@Setter
 	@Column(name="NAME")
 	private String name;
 	
+	@Setter
 	@Column(name="EMAIL")
 	private String email;
 	
+	@Setter
 	@Column(name="AGE")
 	private int age;
 	
