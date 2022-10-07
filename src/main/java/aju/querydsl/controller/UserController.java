@@ -3,7 +3,6 @@ package aju.querydsl.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,55 +10,122 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import aju.querydsl.dto.CompanyDto;
+import aju.querydsl.dto.UserDto;
+import aju.querydsl.entity.Company;
+import aju.querydsl.entity.People;
 import aju.querydsl.entity.User;
-import aju.querydsl.repository.UserRepository;
-import aju.querydsl.repository.UserRepositorySupport;
+import aju.querydsl.repository.RepositorySupport;
+import aju.querydsl.service.MainServiceImpl;
 
 @RestController
 public class UserController {
 	
-	private UserRepositorySupport userRepositorySupport;
-	private UserRepository userRepository;
+	private RepositorySupport repositorySupport;
+	private MainServiceImpl mainService;
 	
 	@Autowired
-	public UserController(UserRepository userRepository, UserRepositorySupport userRepositorySupport) {
-		this.userRepositorySupport = userRepositorySupport;
-		this.userRepository = userRepository;
+	public UserController(RepositorySupport repositorySupport,MainServiceImpl mainService) {
+		this.repositorySupport = repositorySupport;
+		this.mainService = mainService;
 	}
+	
+	//   USER Controller -------------------------------------------------	
 	
 	// User List Read
-	@GetMapping("/Users")
-	public List<User> findAll(){
-		return userRepositorySupport.findAll();
+	@GetMapping("/users")
+	public List<User> userList(){	
+		return repositorySupport.findAll();
 	}
 	
-	// User Create 
-	@PostMapping("/Users")
-	public ResponseEntity<?> save(User user) {
-		if(user.getId() != null) {
-			if(userRepositorySupport.findById(user.getId()) != null) {
-				return ResponseEntity.notFound().build();
-			}
-		}		
-		userRepository.save(user);
-		return  ResponseEntity.ok().body(user);
+	// User 해당 ID로 조회
+	@GetMapping("/users/{id}")
+	public User getUser(Long id) {
+		return repositorySupport.findById(id);				
 	}
 	
-	// User find by id
-	@GetMapping("/Users/{id}")
-	public User findById(Long id) {
-		return userRepositorySupport.findById(id);				
+	
+	// User 생성	
+	@PostMapping("/users")
+	public ResponseEntity<?> insertUser(UserDto userDto){
+		mainService.saveUser(userDto);
+		return  ResponseEntity.ok().body(userDto);
 	}
 	
-	// User Update by id
-	@PutMapping("/Users/{id}")
-	public void updateById(Long id,User user) {		
-		userRepositorySupport.updateById(id, user);
+	// User 해당 ID의 테이블 수정
+	@PutMapping("/users/{id}")
+	public void updateUser(Long id,User user) {		
+		repositorySupport.updateById(id, user);
+	}	
+	
+	// User 해당 ID 삭제 테이블
+	@DeleteMapping("/users/{id}")
+	public void deleteUser(Long id) {
+		repositorySupport.deleteById(id);
 	}
 	
-	// User Delete by id
-	@DeleteMapping("/Users/{id}")
-	public void deleteById(Long id) {
-		userRepositorySupport.deleteById(id);
+	//   Company Controller -------------------------------------------------		
+	
+	// Company List 
+	@GetMapping("/companys")
+	public List<Company> companyList(){
+		return repositorySupport.findAllCompany();
+		
 	}
+	
+	// Company ID로 조회 
+	@GetMapping("/companys/{id}")
+	public Company getCompany(Long companyId){
+		return repositorySupport.findByCompanyId(companyId);
+		
+	}
+	
+	// Company Create 
+	@PostMapping("/companys")
+	public ResponseEntity<?> insertCompany(CompanyDto companyDto) {	
+		mainService.saveCompany(companyDto);
+		return  ResponseEntity.ok().body(companyDto);
+	}
+	
+	// Company ID 수정
+	@PutMapping("/companys/{id}")
+	public void updateMember(Long id,Company company) {
+		repositorySupport.updateByIdCompany(id, company);
+	}
+	
+	// Company ID 삭제
+	@DeleteMapping("/companys/{id}")
+	public void deleteCompany(Long id) {
+		repositorySupport.deleteByIdCompany(id);
+	}
+	
+	
+	
+	//   Join  -------------------------------------------------
+	
+	
+	@GetMapping("/people")
+	public People getPeople(){		
+		return repositorySupport.findByPeople();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	/* querydsl insert Controller
+	
+	@PostMapping("/Usersdsl/{id}")
+	public void insertById(User user) {		
+		repositorySupport.create(user);
+	}
+	
+	@PostMapping("/memberdsl/{id}")
+	public void insertByMemberId(Member member) {		
+		repositorySupport.createMember(member);
+	}
+	*/
 }

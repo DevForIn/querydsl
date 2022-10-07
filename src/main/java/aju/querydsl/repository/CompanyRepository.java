@@ -7,8 +7,8 @@ import aju.querydsl.entity.Company;
 import aju.querydsl.entity.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<User,Long>{	
-		
-	User save(User user);
+public interface CompanyRepository extends JpaRepository<Company,Long>{	
+	
+	Company save(Company member);
 
 }
