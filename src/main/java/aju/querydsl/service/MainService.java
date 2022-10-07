@@ -10,6 +10,7 @@ import aju.querydsl.entity.User;
 public interface MainService {	
 	
     default User dtoToEntity(UserDto dto, Company findCompany){
+    	System.out.println("User dtoToEntity Service 실행");
     	User entity = User.builder()
                 .userAge(dto.getUserAge())
                 .userName(dto.getUserName())
@@ -19,6 +20,7 @@ public interface MainService {
         return entity;
     }
     default Company dtoToEntity(CompanyDto dto){
+    	System.out.println("Company dtoToEntity Service 실행");
     	Company entity = Company.builder()
                 .companyName(dto.getCompanyName())
                 .build();
