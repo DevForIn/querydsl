@@ -28,7 +28,7 @@ public class MainServiceImpl implements MainService{
 
 	@Override
 	public int saveUser(UserDto userDto) {		
-        Company findCompany = repositorySupport.findByCompanyId(userDto.getCompany());
+        Company findCompany = repositorySupport.findByCompanyId(userDto.getCompanyNum());
         User entity = dtoToEntity(userDto,findCompany);
         if(findCompany == null) {
         	System.out.println("해당 ID의 Company 테이블이 존재하지 않음.");

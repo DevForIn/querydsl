@@ -9,6 +9,6 @@ public class UserDto {
 	private String userName;
 	private String userEmail;
 	private int userAge;
-	private Long company;
+	private Long companyNum;
 
 }
