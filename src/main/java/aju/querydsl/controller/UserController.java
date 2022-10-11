@@ -20,13 +20,11 @@ import aju.querydsl.service.MainServiceImpl;
 
 @RestController
 public class UserController {
-	
-	private RepositorySupport repositorySupport;
+		
 	private MainServiceImpl mainService;
 	
 	@Autowired
-	public UserController(RepositorySupport repositorySupport,MainServiceImpl mainService) {
-		this.repositorySupport = repositorySupport;
+	public UserController(MainServiceImpl mainService) {
 		this.mainService = mainService;
 	}
 	
@@ -35,13 +33,13 @@ public class UserController {
 	// User List Read
 	@GetMapping("/users")
 	public List<User> userList(){	
-		return repositorySupport.findAll();
+		return mainService.findAll();
 	}
 	
 	// User 해당 ID로 조회
 	@GetMapping("/users/{id}")
 	public User getUser(Long id) {
-		return repositorySupport.findById(id);				
+		return mainService.findById(id);				
 	}
 	
 	
@@ -61,7 +59,7 @@ public class UserController {
 	// User 해당 ID 삭제 테이블
 	@DeleteMapping("/users/{id}")
 	public void deleteUser(Long id) {
-		repositorySupport.deleteById(id);
+		mainService.deleteById(id);
 	}
 	
 	//   Company Controller -------------------------------------------------		
@@ -69,14 +67,14 @@ public class UserController {
 	// Company List 
 	@GetMapping("/companys")
 	public List<Company> companyList(){
-		return repositorySupport.findAllCompany();
+		return mainService.findAllCompany();
 		
 	}
 	
 	// Company ID로 조회 
 	@GetMapping("/companys/{id}")
 	public Company getCompany(Long companyId){
-		return repositorySupport.findByCompanyId(companyId);
+		return mainService.findByCompanyId(companyId);
 		
 	}
 	
@@ -90,13 +88,13 @@ public class UserController {
 	// Company ID 수정
 	@PutMapping("/companys/{id}")
 	public void updateMember(Long id,Company company) {
-		repositorySupport.updateByIdCompany(id, company);
+		mainService.updateByIdCompany(id, company);
 	}
 	
 	// Company ID 삭제
 	@DeleteMapping("/companys/{id}")
 	public void deleteCompany(Long id) {
-		repositorySupport.deleteByIdCompany(id);
+		mainService.deleteByIdCompany(id);
 	}
 	
 	

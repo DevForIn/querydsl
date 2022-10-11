@@ -76,4 +76,32 @@ public class MainServiceImpl implements MainService {
 		System.out.println(people);
 		return people;				
 	}
+
+	public List<User> findAll() {		
+		return repositorySupport.findAll();
+	}
+
+	public User findById(Long id) {
+		return repositorySupport.findById(id);
+	}
+
+	public void deleteById(Long id) {
+		repositorySupport.deleteById(id);		
+	}
+
+	public List<Company> findAllCompany() {		
+		return repositorySupport.findAllCompany();
+	}
+
+	public Company findByCompanyId(Long companyId) {
+		return repositorySupport.findByCompanyId(companyId);
+	}
+
+	public void updateByIdCompany(Long id, Company company) {
+		repositorySupport.updateByIdCompany(id, company);		
+	}
+
+	public void deleteByIdCompany(Long id) {
+		repositorySupport.deleteByIdCompany(id);		
+	}	
 }
