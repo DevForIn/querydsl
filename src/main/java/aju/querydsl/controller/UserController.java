@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import aju.querydsl.dto.CompanyDto;
+import aju.querydsl.dto.PeopleDto;
 import aju.querydsl.dto.UserDto;
 import aju.querydsl.entity.Company;
-import aju.querydsl.entity.People;
 import aju.querydsl.entity.User;
 import aju.querydsl.repository.RepositorySupport;
 import aju.querydsl.service.MainServiceImpl;
@@ -54,8 +54,8 @@ public class UserController {
 	
 	// User 해당 ID의 테이블 수정
 	@PutMapping("/users/{id}")
-	public void updateUser(Long id,User user) {		
-		repositorySupport.updateById(id, user);
+	public void updateUser(Long id,UserDto userDto) {		
+		mainService.updateById(id, userDto);
 	}	
 	
 	// User 해당 ID 삭제 테이블
@@ -101,12 +101,13 @@ public class UserController {
 	
 	
 	
-	//   Join  -------------------------------------------------
+	//   JOIN  -------------------------------------------------
 	
 	
-	@GetMapping("/people")
-	public People getPeople(){		
-		return repositorySupport.findByPeople();
+	// Company Id에 등록된 User 목록 + company Name
+	@GetMapping("/users/company/{id}")
+	public List<PeopleDto> companyPeople(Long id){		
+		return mainService.findByCompanyUsers(id);
 	}
 	
 	

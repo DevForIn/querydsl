@@ -8,11 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 import org.springframework.stereotype.Repository;
 
+import com.querydsl.core.types.Projections;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
-import aju.querydsl.dto.UserDto;
+import aju.querydsl.dto.PeopleDto;
 import aju.querydsl.entity.Company;
-import aju.querydsl.entity.People;
 import aju.querydsl.entity.QCompany;
 import aju.querydsl.entity.QUser;
 import aju.querydsl.entity.User;
@@ -61,6 +61,7 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 			.set(qUser.userName, user.getUserName())
 			.set(qUser.userEmail, user.getUserEmail())
 			.set(qUser.userAge, user.getUserAge())
+			.set(qUser.company, user.getCompany())
 			.execute();		
 	}
 	
@@ -97,6 +98,7 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 			.fetchOne();		
 	}
 
+	@Transactional
 	public void updateByIdCompany(Long id, Company company) {
 		QCompany qCompany = QCompany.company;
 		queryFactory.update(qCompany)
@@ -105,17 +107,28 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 			.execute();	
 	}
 
+	@Transactional
 	public void deleteByIdCompany(Long id) {
 		QCompany qCompany = QCompany.company;
 		queryFactory.delete(qCompany)
 			.where(qCompany.companyId.eq(id))
 			.execute();		
 	}
+	
 
-	public People findByPeople() {
-		QCompany qCompany = QCompany.company;
+	public List<PeopleDto> findByCompanyUsers(Long id) {
 		QUser qUser = QUser.user;
-		return null;
+		QCompany qCompany = QCompany.company;
+		return queryFactory
+				.select(
+						Projections.constructor
+							(PeopleDto.class,
+							qCompany.companyName,
+							qUser.userName,
+							qUser.userEmail)
+						)
+				.from(qUser,qCompany)
+				.where(qUser.company.companyId.eq(id).and(qCompany.companyId.eq(id)))
+				.fetch();		
 	}
-
 }
