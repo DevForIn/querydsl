@@ -8,10 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 import org.springframework.stereotype.Repository;
 
-import com.querydsl.core.types.Projections;
+
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import aju.querydsl.dto.PeopleDto;
+import aju.querydsl.dto.QPeopleDto;
 import aju.querydsl.entity.Company;
 import aju.querydsl.entity.QCompany;
 import aju.querydsl.entity.QUser;
@@ -120,13 +121,14 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 		QUser qUser = QUser.user;
 		QCompany qCompany = QCompany.company;
 		return queryFactory
-				.select(
-						Projections.constructor
-							(PeopleDto.class,
-							qCompany.companyName,
-							qUser.userName,
-							qUser.userEmail)
-						)
+				.select(new QPeopleDto(qCompany.companyName,qUser.userName,qUser.userEmail))
+//				.select(
+//						Projections.constructor
+//							(PeopleDto.class,
+//							qCompany.companyName,
+//							qUser.userName,
+//							qUser.userEmail)
+//						)
 				.from(qUser,qCompany)
 				.where(qUser.company.companyId.eq(id).and(qCompany.companyId.eq(id)))
 				.fetch();		

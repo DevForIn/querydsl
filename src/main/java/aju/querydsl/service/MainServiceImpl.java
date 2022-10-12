@@ -43,10 +43,9 @@ public class MainServiceImpl implements MainService {
 	}
 
 	@Override
-	public int saveCompany(CompanyDto companyDto) {
+	public void saveCompany(CompanyDto companyDto) {
 		Company entity = dtoToEntity(companyDto);
-		companyRepository.save(entity);
-		return 0;
+		companyRepository.save(entity);		
 	}
 
 	public int updateById(Long id, UserDto userDto) {
@@ -93,12 +92,20 @@ public class MainServiceImpl implements MainService {
 		return repositorySupport.findAllCompany();
 	}
 
-	public Company findByCompanyId(Long companyId) {
-		return repositorySupport.findByCompanyId(companyId);
+	public Company findByCompanyId(Long id) {
+		return repositorySupport.findByCompanyId(id);
 	}
 
-	public void updateByIdCompany(Long id, Company company) {
-		repositorySupport.updateByIdCompany(id, company);		
+	public int updateByIdCompany(Long id, CompanyDto companyDto) {		
+		Company findCompany = repositorySupport.findByCompanyId(id);
+		Company entity = dtoToEntity(companyDto);
+		if (findCompany == null ) {
+			System.out.println("해당 ID의 Company 테이블이 존재하지 않음.");
+			return 0;
+		} else {
+			repositorySupport.updateByIdCompany(id, entity);
+			return 1;
+		}
 	}
 
 	public void deleteByIdCompany(Long id) {

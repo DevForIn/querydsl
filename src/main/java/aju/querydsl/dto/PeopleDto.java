@@ -1,5 +1,7 @@
 package aju.querydsl.dto;
 
+import com.querydsl.core.annotations.QueryProjection;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -9,12 +11,15 @@ import lombok.ToString;
 public class PeopleDto {
 
 	private String companyName;
-	private String email;
 	private String name;
+	private String email;
 	
-	public PeopleDto(String companyName, String email, String name) {
+	
+	@QueryProjection
+	public PeopleDto(String companyName, String name, String email) {
 		this.companyName = companyName;
-		this.email = email;
 		this.name = name;
+		this.email = email;
+		
 	}
 }

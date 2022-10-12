@@ -6,7 +6,6 @@ import aju.querydsl.dto.UserDto;
 import aju.querydsl.entity.Company;
 import aju.querydsl.entity.User;
 
-
 public interface MainService {	
 	
     default User dtoToEntity(UserDto dto, Company findCompany){
@@ -29,5 +28,5 @@ public interface MainService {
 	
 	int saveUser(UserDto userDto);		
 
-	int saveCompany(CompanyDto companyDto);
+	void saveCompany(CompanyDto companyDto);
 }
