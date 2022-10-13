@@ -71,26 +71,16 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 		QUser qUser = QUser.user;
 		queryFactory.delete(qUser)
 			.where(qUser.userId.eq(id))
-			.execute();		
+			.execute();
 	}
-
 	
 	@NonNull
 	public List<Company> findAllCompany(){
 		return queryFactory.selectFrom(QCompany.company)
 				.fetch();
 	}
-	
-/* 	
-	@Transactional
-	public void createMember(Company company) {		
-		QCompany qCompany = QCompany.company;		
-		queryFactory.insert(qCompany)
-		    .columns(qCompany.companyId, qCompany.companyName)
-		    .values(company.getCompanyId(),company.getCompanyName())
-		    .execute();	
-	}
-*/
+
+	@NonNull
 	public Company findByCompanyId(Long id) {
 		QCompany qCompany = QCompany.company;
 		return queryFactory.select(qCompany)
@@ -110,7 +100,7 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 
 	@Transactional
 	public void deleteByIdCompany(Long id) {
-		QCompany qCompany = QCompany.company;
+		QCompany qCompany = QCompany.company;		
 		queryFactory.delete(qCompany)
 			.where(qCompany.companyId.eq(id))
 			.execute();		
@@ -133,4 +123,21 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 				.where(qUser.company.companyId.eq(id).and(qCompany.companyId.eq(id)))
 				.fetch();		
 	}
+
+	public Company findByCompanyName(String name) {
+		QCompany qCompany = QCompany.company;
+		return queryFactory.select(qCompany)
+			.from(qCompany)
+			.where(qCompany.companyName.eq(name))
+			.fetchOne();	
+	}
+
+	public User findByName(String name) {
+		QUser qUser = QUser.user;
+		return queryFactory.select(qUser)
+				.from(qUser)
+				.where(qUser.userName.eq(name))
+				.fetchOne();
+	}
+
 }

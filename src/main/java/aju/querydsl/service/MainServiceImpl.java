@@ -30,22 +30,22 @@ public class MainServiceImpl implements MainService {
 	}
 
 	@Override
-	public int saveUser(UserDto userDto) {
+	public User saveUser(UserDto userDto) {
 		Company findCompany = repositorySupport.findByCompanyId(userDto.getCompanyNum());
 		User entity = dtoToEntity(userDto, findCompany);
 		if (findCompany == null) {
 			System.out.println("해당 ID의 Company 테이블이 존재하지 않음.");
-			return 0;
+			return null;
 		} else {
 			userRepository.save(entity);
-			return 1;
+			return entity;
 		}
 	}
 
 	@Override
-	public void saveCompany(CompanyDto companyDto) {
+	public Company saveCompany(CompanyDto companyDto) {
 		Company entity = dtoToEntity(companyDto);
-		companyRepository.save(entity);		
+		return companyRepository.save(entity);		
 	}
 
 	public int updateById(Long id, UserDto userDto) {
@@ -53,29 +53,29 @@ public class MainServiceImpl implements MainService {
 		Company findCompany = repositorySupport.findByCompanyId(userDto.getCompanyNum());
 		User entity = dtoToEntity(userDto, findCompany);
 		if(findUser == null) {
-			System.out.println("해당 ID가 존재하지 않습니다.");
+			System.out.println("해당 ID가 존재하지 않음.");
 			return 0;
-		}
+		}		
 		if (findCompany == null ) {
-			System.out.println("해당 ID의 Company 테이블이 존재하지 않음.");
+			System.out.println("해당 Company ID의 테이블이 존재하지 않음.");
 			return 0;
-		} else {
-			repositorySupport.updateById(id, entity);
-			return 1;
-		}
+		} 
+		
+		repositorySupport.updateById(id, entity);
+		return 1;		
 	}
 
 	public List<PeopleDto> findByCompanyUsers(Long id) {
 		Company findCompany = repositorySupport.findByCompanyId(id);
 		if (findCompany == null ) {
-			System.out.println("해당 ID의 Company 테이블이 존재하지 않음.");
+			System.out.println("해당 Company ID의 테이블이 존재하지 않음.");
 			return null;
 		} 
 		List<PeopleDto> people = repositorySupport.findByCompanyUsers(id);
 		System.out.println(people);
 		return people;				
 	}
-
+	
 	public List<User> findAll() {		
 		return repositorySupport.findAll();
 	}
@@ -100,7 +100,7 @@ public class MainServiceImpl implements MainService {
 		Company findCompany = repositorySupport.findByCompanyId(id);
 		Company entity = dtoToEntity(companyDto);
 		if (findCompany == null ) {
-			System.out.println("해당 ID의 Company 테이블이 존재하지 않음.");
+			System.out.println("해당 Company ID의 테이블이 존재하지 않음.");
 			return 0;
 		} else {
 			repositorySupport.updateByIdCompany(id, entity);
@@ -110,5 +110,13 @@ public class MainServiceImpl implements MainService {
 
 	public void deleteByIdCompany(Long id) {
 		repositorySupport.deleteByIdCompany(id);		
-	}	
+	}
+
+	public Company findByCompanyName(String name) {
+		return repositorySupport.findByCompanyName(name);		
+	}
+
+	public User findByName(String name) {
+		return repositorySupport.findByName(name);	
+	}
 }

@@ -26,7 +26,7 @@ public interface MainService {
         return entity;
     }
 	
-	int saveUser(UserDto userDto);		
+	User saveUser(UserDto userDto);		
 
-	void saveCompany(CompanyDto companyDto);
+	Company saveCompany(CompanyDto companyDto);
 }
