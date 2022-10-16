@@ -8,12 +8,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 import org.springframework.stereotype.Repository;
 
+import com.querydsl.core.Tuple;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import aju.querydsl.dto.UserDto;
 import aju.querydsl.entity.Company;
 import aju.querydsl.entity.People;
 import aju.querydsl.entity.QCompany;
+import aju.querydsl.entity.QPeople;
 import aju.querydsl.entity.QUser;
 import aju.querydsl.entity.User;
 import lombok.NonNull;
@@ -112,10 +114,17 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 			.execute();		
 	}
 
-	public People findByPeople() {
+	public List<Tuple> findByUser(Long id) {
 		QCompany qCompany = QCompany.company;
 		QUser qUser = QUser.user;
-		return null;
+		return queryFactory
+		        .select(qUser.userName,qUser.userEmail,qCompany.companyName)
+		        .from(qUser)
+		        .leftJoin(qUser.company,qCompany)
+		        .on(qCompany.companyId.eq(id))
+		        .fetch();
+		
+		
 	}
 
 }

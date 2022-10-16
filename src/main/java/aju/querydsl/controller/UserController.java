@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.querydsl.core.Tuple;
+
 import aju.querydsl.dto.CompanyDto;
 import aju.querydsl.dto.UserDto;
 import aju.querydsl.entity.Company;
@@ -104,9 +106,9 @@ public class UserController {
 	//   Join  -------------------------------------------------
 	
 	
-	@GetMapping("/people")
-	public People getPeople(){		
-		return repositorySupport.findByPeople();
+	@GetMapping("/comuser/{id}")
+	public List<Tuple> getCompanyUsers(Long id){		
+		return repositorySupport.findByUser(id);
 	}
 	
 	
