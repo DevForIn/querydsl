@@ -48,13 +48,13 @@
 		</dependency>
 		<!-- Swagger 적용 끝-->
 		
-		<!-- MySql 적용
+		<!-- MySql 적용 -->
 		<dependency> 
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.30</version>
 		</dependency>
-		MySql 적용 끝 -->
+		<!-- MySql 적용 끝 -->
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

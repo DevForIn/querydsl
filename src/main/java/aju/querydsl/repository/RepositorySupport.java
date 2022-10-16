@@ -8,14 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 import org.springframework.stereotype.Repository;
 
-import com.querydsl.core.Tuple;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
-import aju.querydsl.dto.UserDto;
+import aju.querydsl.dto.PeopleDto;
+import aju.querydsl.dto.QPeopleDto;
 import aju.querydsl.entity.Company;
-import aju.querydsl.entity.People;
 import aju.querydsl.entity.QCompany;
-import aju.querydsl.entity.QPeople;
 import aju.querydsl.entity.QUser;
 import aju.querydsl.entity.User;
 import lombok.NonNull;
@@ -63,6 +61,7 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 			.set(qUser.userName, user.getUserName())
 			.set(qUser.userEmail, user.getUserEmail())
 			.set(qUser.userAge, user.getUserAge())
+			.set(qUser.company, user.getCompany())
 			.execute();		
 	}
 	
@@ -71,26 +70,16 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 		QUser qUser = QUser.user;
 		queryFactory.delete(qUser)
 			.where(qUser.userId.eq(id))
-			.execute();		
+			.execute();
 	}
-
 	
 	@NonNull
 	public List<Company> findAllCompany(){
 		return queryFactory.selectFrom(QCompany.company)
 				.fetch();
 	}
-	
-/* 	
-	@Transactional
-	public void createMember(Company company) {		
-		QCompany qCompany = QCompany.company;		
-		queryFactory.insert(qCompany)
-		    .columns(qCompany.companyId, qCompany.companyName)
-		    .values(company.getCompanyId(),company.getCompanyName())
-		    .execute();	
-	}
-*/
+
+	@NonNull
 	public Company findByCompanyId(Long id) {
 		QCompany qCompany = QCompany.company;
 		return queryFactory.select(qCompany)
@@ -99,6 +88,7 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 			.fetchOne();		
 	}
 
+	@Transactional
 	public void updateByIdCompany(Long id, Company company) {
 		QCompany qCompany = QCompany.company;
 		queryFactory.update(qCompany)
@@ -107,24 +97,46 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 			.execute();	
 	}
 
+	@Transactional
 	public void deleteByIdCompany(Long id) {
-		QCompany qCompany = QCompany.company;
+		QCompany qCompany = QCompany.company;		
 		queryFactory.delete(qCompany)
 			.where(qCompany.companyId.eq(id))
 			.execute();		
 	}
-
-	public List<Tuple> findByUser(Long id) {
-		QCompany qCompany = QCompany.company;
+	
+	
+	public List<PeopleDto> findByCompanyUsers(Long id) {
 		QUser qUser = QUser.user;
+		QCompany qCompany = QCompany.company;
 		return queryFactory
-		        .select(qUser.userName,qUser.userEmail,qCompany.companyName)
-		        .from(qUser)
-		        .leftJoin(qUser.company,qCompany)
-		        .on(qCompany.companyId.eq(id))
-		        .fetch();
-		
-		
+				.select(new QPeopleDto(qCompany.companyName,qUser.userName,qUser.userEmail))
+//				.select(
+//						Projections.constructor
+//							(PeopleDto.class,
+//							qCompany.companyName,
+//							qUser.userName,
+//							qUser.userEmail)
+//						)
+				.from(qUser,qCompany)
+				.where(qUser.company.companyId.eq(id).and(qCompany.companyId.eq(id)))
+				.fetch();		
+	}
+
+	public Company findByCompanyName(String name) {
+		QCompany qCompany = QCompany.company;
+		return queryFactory.select(qCompany)
+			.from(qCompany)
+			.where(qCompany.companyName.eq(name))
+			.fetchOne();	
+	}
+
+	public User findByName(String name) {
+		QUser qUser = QUser.user;
+		return queryFactory.select(qUser)
+				.from(qUser)
+				.where(qUser.userName.eq(name))
+				.fetchOne();
 	}
 
 }

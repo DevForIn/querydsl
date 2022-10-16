@@ -1,7 +1,5 @@
 package aju.querydsl.entity;
 
-import java.util.List;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,7 +17,7 @@ import lombok.NoArgsConstructor;
 @Entity @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="User_table")
+@Table(name="User")
 public class User {
 	
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)

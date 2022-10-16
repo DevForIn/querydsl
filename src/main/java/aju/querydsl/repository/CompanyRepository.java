@@ -9,6 +9,6 @@ import aju.querydsl.entity.User;
 @Repository
 public interface CompanyRepository extends JpaRepository<Company,Long>{	
 	
-	Company save(Company member);
+	Company save(Company company);
 
 }
