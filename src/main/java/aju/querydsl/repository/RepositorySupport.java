@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
 import org.springframework.stereotype.Repository;
 
-
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import aju.querydsl.dto.PeopleDto;
@@ -106,7 +105,7 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 			.execute();		
 	}
 	
-
+	
 	public List<PeopleDto> findByCompanyUsers(Long id) {
 		QUser qUser = QUser.user;
 		QCompany qCompany = QCompany.company;

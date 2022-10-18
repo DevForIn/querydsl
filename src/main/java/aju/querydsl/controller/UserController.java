@@ -57,6 +57,26 @@ public class UserController {
 	public void deleteUser(@PathVariable Long id) {
 		mainService.deleteById(id);
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	/* querydsl insert Controller
+	
+	@PostMapping("/Usersdsl/{id}")
+	public void insertById(User user) {		
+		repositorySupport.create(user);
+	}
+	
+	@PostMapping("/memberdsl/{id}")
+	public void insertByMemberId(Member member) {		
+		repositorySupport.createMember(member);
+	}
+	*/
 }
 
 

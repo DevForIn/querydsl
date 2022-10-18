@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -25,7 +24,7 @@ public class Company {
 	
 	@Column(name="companyName",nullable =false)
 	private String companyName;	
-		
+	
 	@Builder
 	public Company(String companyName) {
 		this.companyName=companyName;
