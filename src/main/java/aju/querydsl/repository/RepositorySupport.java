@@ -84,9 +84,9 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 	public Company findByCompanyId(Long id) {
 		QCompany qCompany = QCompany.company;
 		return queryFactory.select(qCompany)
-			.from(qCompany)
-			.where(qCompany.companyId.eq(id))
-			.fetchOne();		
+				.from(qCompany)
+				.where(qCompany.companyId.eq(id))
+				.fetchOne();		
 	}
 
 	@Transactional
@@ -127,9 +127,9 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 	public Company findByCompanyName(String name) {
 		QCompany qCompany = QCompany.company;
 		return queryFactory.select(qCompany)
-			.from(qCompany)
-			.where(qCompany.companyName.eq(name))
-			.fetchOne();	
+				.from(qCompany)
+				.where(qCompany.companyName.eq(name))
+				.fetchOne();	
 	}
 
 	public User findByName(String name) {

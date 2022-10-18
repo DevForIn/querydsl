@@ -27,55 +27,19 @@ class QuerydslApplicationTests {
     private EntityManager entityManager;
 	
 	@Test
-	@Transactional
-	@Order(7)
-    void 회원ID초기화() {
-		System.out.println("\n---회원ID 초기화---");		
-        entityManager
-            .createNativeQuery("ALTER TABLE user AUTO_INCREMENT = 1")
-            .executeUpdate();
-    }
+	@Order(1)
+	void 회사생성() {
+		System.out.println("\n---회사 생성---");
+		CompanyDto companyDto = new CompanyDto();
+		Company result = new Company();		
+		
+		companyDto.setCompanyName("테스트회사");
+		
+		result = msi.saveCompany(companyDto);
 	
-	@Test
-	@Transactional
-	@Order(6)
-    void 회사ID초기화() {
-		System.out.println("\n---회사ID 초기화---");		
-        entityManager
-            .createNativeQuery("ALTER TABLE company AUTO_INCREMENT = 1")
-            .executeUpdate();
-    }
-	@Test
-	@Order(5)
-	void 회사삭제() {
-		System.out.println("\n---회사 삭제---");
-		Company com = msi.findByCompanyName("테스트회사");
-		msi.deleteByIdCompany(com.getCompanyId());
-	}
-	
-	@Test
-	@Order(4)
-	void 회원삭제() {
-		System.out.println("\n---회원 삭제---");
-		User result = msi.findByName("테스터이름");
-		msi.deleteById(result.getUserId());
-	}
-	
-	@Test
-	@Order(3)
-	void 회원검색() {		
-		System.out.println("\n---회원 검색---");
-		User result = msi.findByName("테스터이름");				
-        if(!result.equals(null)){
-        	System.out.println("검색 NAME : 테스터이름");
-    		System.out.println("테스트 회원 ID : "+result.getUserId());
-    		System.out.println("테스트 회원 Name : "+result.getUserName());
-    		System.out.println("테스트 회원 Email : "+result.getUserEmail());
-    		System.out.println("테스트 회원 Age : "+result.getUserAge());
-    		System.out.println("테스트 회사 ID : "+result.getCompany().getCompanyId());
-    		System.out.println("테스트 회사 Name : "+result.getCompany().getCompanyName());
-    		
-        }		
+		System.out.println("테스트 회사 ID : "+result.getCompanyId());
+		System.out.println("테스트 회사 Name : "+result.getCompanyName());		
+						
 	}
 	
 	@Test
@@ -102,18 +66,70 @@ class QuerydslApplicationTests {
 	}
 	
 	@Test
-	@Order(1)
-	void 회사생성() {
-		System.out.println("\n---회사 생성---");
-		CompanyDto companyDto = new CompanyDto();
-		Company result = new Company();		
-		
-		companyDto.setCompanyName("테스트회사");
-		
-		result = msi.saveCompany(companyDto);
+	@Order(3)
+	void 회원검색() {		
+		System.out.println("\n---회원 검색---");
+		User result = msi.findByName("테스터이름");				
+        if(!result.equals(null)){
+        	System.out.println("검색 NAME : 테스터이름");
+    		System.out.println("테스트 회원 ID : "+result.getUserId());
+    		System.out.println("테스트 회원 Name : "+result.getUserName());
+    		System.out.println("테스트 회원 Email : "+result.getUserEmail());
+    		System.out.println("테스트 회원 Age : "+result.getUserAge());
+    		System.out.println("테스트 회사 ID : "+result.getCompany().getCompanyId());
+    		System.out.println("테스트 회사 Name : "+result.getCompany().getCompanyName());
+    		
+        }		
+	}
 	
-		System.out.println("테스트 회사 ID : "+result.getCompanyId());
-		System.out.println("테스트 회사 Name : "+result.getCompanyName());		
-						
-	}	
+	@Test
+	@Order(4)
+	void 회사검색() {
+		System.out.println("\n---회사 검색---");
+		Company result = msi.findByCompanyName("테스트회사");
+		if(!result.equals(null)) {
+			System.out.println("검색 NAME : 테스트회사");
+			System.out.println("테스트 회사 ID : "+result.getCompanyId());
+			System.out.println("테스트 회사 Name : "+result.getCompanyName());	
+		}
+	}
+	
+	@Test
+	@Order(5)
+	void 회원삭제() {
+		System.out.println("\n---회원 삭제---");
+		User result = msi.findByName("테스터이름");
+		msi.deleteById(result.getUserId());
+	}
+	
+	@Test
+	@Order(6)
+	void 회사삭제() {
+		System.out.println("\n---회사 삭제---");
+		Company com = msi.findByCompanyName("테스트회사");
+		msi.deleteByIdCompany(com.getCompanyId());
+	}
+	
+	@Test
+	@Transactional
+	@Order(7)
+    void ID초기화() {
+		System.out.println("\n---회원, 회사 ID 초기화---");		
+        entityManager
+            .createNativeQuery("ALTER TABLE company AUTO_INCREMENT = 1")
+            .executeUpdate();
+        entityManager
+	        .createNativeQuery("ALTER TABLE user AUTO_INCREMENT = 1")
+	        .executeUpdate();
+    }
+//	
+//	@Test
+//	@Transactional
+//	@Order(8)
+//    void 회원ID초기화() {
+//		System.out.println("\n---회원ID 초기화---");		
+//        entityManager
+//            .createNativeQuery("ALTER TABLE user AUTO_INCREMENT = 1")
+//            .executeUpdate();
+//    }
 }
