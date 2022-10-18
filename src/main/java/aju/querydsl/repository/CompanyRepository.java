@@ -10,5 +10,4 @@ public interface CompanyRepository extends JpaRepository<Company,Long>{
 	
 	@SuppressWarnings("unchecked")
 	Company save(Company company);
-
 }
