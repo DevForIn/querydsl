@@ -1,0 +1,29 @@
+version: "2.1"
+services: 
+  mysql:
+    container_name : mysql
+    image: mysql:8.0.30
+    environment: 
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_DATABASE: qms
+    ports: 
+      - 3307:3307
+    networks :
+      - springboot-mysql-net
+  spring-app:    
+    build:
+      context : ./
+      dockerfile : Dockerfile
+    ports:
+      - 8080:8080
+    restart : always
+    links : 
+      - mysql
+    depends_on:
+      - mysql      
+    networks :
+      - springboot-mysql-net
+networks : 
+  springboot-mysql-net :
+    driver : bridge

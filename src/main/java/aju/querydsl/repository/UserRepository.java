@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 import aju.querydsl.entity.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<User,Long>{		
-	@SuppressWarnings("unchecked")
-	User save(User user);
+public interface UserRepository extends JpaRepository<User,Long>{	
+
 }

@@ -2,6 +2,9 @@ package aju.querydsl.service;
 
 import java.util.List;
 
+import javax.persistence.EntityManager;
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +23,9 @@ public class MainServiceImpl implements MainService {
 	private UserRepository userRepository;
 	private CompanyRepository companyRepository;
 	private RepositorySupport repositorySupport;
+	
+	@Autowired
+    private EntityManager entityManager;
 
 	@Autowired
 	public MainServiceImpl(RepositorySupport repositorySupport, UserRepository userRepository,
@@ -28,21 +34,19 @@ public class MainServiceImpl implements MainService {
 		this.userRepository = userRepository;
 		this.companyRepository = companyRepository;
 	}
-
-	@Override
+	
 	public User saveUser(UserDto userDto) {
 		Company findCompany = repositorySupport.findByCompanyId(userDto.getCompanyNum());
 		User entity = dtoToEntity(userDto, findCompany);
 		if (findCompany == null) {
 			System.out.println("해당 ID의 Company 테이블이 존재하지 않음.");
 			return null;
-		} else {
+		} 
 			userRepository.save(entity);
 			return entity;
-		}
+		
 	}
 
-	@Override
 	public Company saveCompany(CompanyDto companyDto) {
 		Company entity = dtoToEntity(companyDto);
 		return companyRepository.save(entity);		
@@ -84,8 +88,12 @@ public class MainServiceImpl implements MainService {
 		return repositorySupport.findById(id);
 	}
 
+	@Transactional
 	public void deleteById(Long id) {
-		repositorySupport.deleteById(id);		
+		repositorySupport.deleteById(id);
+		entityManager
+			.createNamedQuery("ALTER TABLE user AUTO_INCREMENT = 1")
+			.executeUpdate();		
 	}
 
 	public List<Company> findAllCompany() {		
@@ -107,9 +115,13 @@ public class MainServiceImpl implements MainService {
 			return 1;
 		}
 	}
-
+	
+	@Transactional
 	public void deleteByIdCompany(Long id) {
-		repositorySupport.deleteByIdCompany(id);		
+		repositorySupport.deleteByIdCompany(id);	
+		entityManager
+        .createNativeQuery("ALTER TABLE company AUTO_INCREMENT = 1")
+        .executeUpdate();		
 	}
 
 	public Company findByCompanyName(String name) {

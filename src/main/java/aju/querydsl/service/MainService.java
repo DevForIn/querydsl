@@ -1,6 +1,5 @@
 package aju.querydsl.service;
 
-
 import aju.querydsl.dto.CompanyDto;
 import aju.querydsl.dto.UserDto;
 import aju.querydsl.entity.Company;
@@ -25,8 +24,4 @@ public interface MainService {
                 .build();
         return entity;
     }
-	
-	User saveUser(UserDto userDto);		
-
-	Company saveCompany(CompanyDto companyDto);
 }

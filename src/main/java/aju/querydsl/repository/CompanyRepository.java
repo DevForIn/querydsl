@@ -8,6 +8,4 @@ import aju.querydsl.entity.Company;
 @Repository
 public interface CompanyRepository extends JpaRepository<Company,Long>{	
 	
-	@SuppressWarnings("unchecked")
-	Company save(Company company);
 }
