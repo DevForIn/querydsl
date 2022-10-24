@@ -71,6 +71,7 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 		queryFactory.delete(qUser)
 			.where(qUser.userId.eq(id))
 			.execute();
+		
 	}
 	
 	@NonNull
@@ -101,8 +102,10 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 	public void deleteByIdCompany(Long id) {
 		QCompany qCompany = QCompany.company;		
 		queryFactory.delete(qCompany)
-			.where(qCompany.companyId.eq(id))
-			.execute();		
+			.where(qCompany.companyId.eq(id))			
+			.execute();	
+		
+		
 	}
 	
 	

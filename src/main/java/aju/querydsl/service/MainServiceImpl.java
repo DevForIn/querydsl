@@ -92,8 +92,8 @@ public class MainServiceImpl implements MainService {
 	public void deleteById(Long id) {
 		repositorySupport.deleteById(id);
 		entityManager
-			.createNamedQuery("ALTER TABLE user AUTO_INCREMENT = 1")
-			.executeUpdate();		
+        	.createNativeQuery("ALTER TABLE user AUTO_INCREMENT = 1")
+        	.executeUpdate();				
 	}
 
 	public List<Company> findAllCompany() {		
