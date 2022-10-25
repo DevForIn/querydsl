@@ -44,6 +44,16 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 		    .values(user.getUserAge(),user.getUserName(),user.getUserEmail()).execute();	
 	}
 */
+
+	@NonNull
+	public List<Company> findAllCompany(){
+		return queryFactory.selectFrom(QCompany.company)
+				.fetch();
+	}	
+	
+	
+	
+	
 	
 	public User findById(Long id) {
 		QUser qUser = QUser.user;
@@ -72,12 +82,6 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 			.where(qUser.userId.eq(id))
 			.execute();
 		
-	}
-	
-	@NonNull
-	public List<Company> findAllCompany(){
-		return queryFactory.selectFrom(QCompany.company)
-				.fetch();
 	}
 
 	@NonNull

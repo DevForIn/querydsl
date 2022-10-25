@@ -19,9 +19,9 @@ import aju.querydsl.repository.UserRepository;
 
 @Service
 public class MainServiceImpl implements MainService {
-
+ 
 	private UserRepository userRepository;
-	private CompanyRepository companyRepository;
+	private CompanyRepository companyRepository;		
 	private RepositorySupport repositorySupport;
 	
 	@Autowired
@@ -34,6 +34,10 @@ public class MainServiceImpl implements MainService {
 		this.userRepository = userRepository;
 		this.companyRepository = companyRepository;
 	}
+
+	public List<Company> findAllCompany() {		
+		return repositorySupport.findAllCompany();
+	}
 	
 	public User saveUser(UserDto userDto) {
 		Company findCompany = repositorySupport.findByCompanyId(userDto.getCompanyNum());
@@ -43,8 +47,7 @@ public class MainServiceImpl implements MainService {
 			return null;
 		} 
 			userRepository.save(entity);
-			return entity;
-		
+			return entity;		
 	}
 
 	public Company saveCompany(CompanyDto companyDto) {
@@ -96,9 +99,6 @@ public class MainServiceImpl implements MainService {
         	.executeUpdate();				
 	}
 
-	public List<Company> findAllCompany() {		
-		return repositorySupport.findAllCompany();
-	}
 
 	public Company findByCompanyId(Long id) {
 		return repositorySupport.findByCompanyId(id);
