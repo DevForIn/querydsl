@@ -49,11 +49,7 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 	public List<Company> findAllCompany(){
 		return queryFactory.selectFrom(QCompany.company)
 				.fetch();
-	}	
-	
-	
-	
-	
+	}
 	
 	public User findById(Long id) {
 		QUser qUser = QUser.user;
@@ -145,5 +141,4 @@ public class RepositorySupport extends QuerydslRepositorySupport{
 				.where(qUser.userName.eq(name))
 				.fetchOne();
 	}
-
 }
