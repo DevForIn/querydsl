@@ -9,7 +9,7 @@ import lombok.ToString;
 @Getter @Setter
 @ToString
 public class PeopleDto {
-
+	
 	private String companyName;
 	private String name;
 	private String email;
@@ -19,7 +19,6 @@ public class PeopleDto {
 	public PeopleDto(String companyName, String name, String email) {
 		this.companyName = companyName;
 		this.name = name;
-		this.email = email;
-		
+		this.email = email;		
 	}
 }

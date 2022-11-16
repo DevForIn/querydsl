@@ -30,6 +30,27 @@
 		</dependency>
 		<!-- querydsl 적용 끝-->
 		
+		
+		
+		<!-- Logging -->
+		<dependency>
+		    <groupId>ch.qos.logback</groupId>
+		    <artifactId>logback-core</artifactId>
+		    <version>1.2.11</version>
+		</dependency>
+		<dependency>
+		    <groupId>ch.qos.logback</groupId>
+		    <artifactId>logback-classic</artifactId>
+		    <version>1.2.11</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-api</artifactId>
+		    <version>1.7.36</version>
+		</dependency>
+		<!-- Logging -->		
+		
+		
 		<!-- Swagger 적용 3.0.0 -->
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -48,6 +69,7 @@
 		</dependency>
 		<!-- Swagger 적용 끝-->
 		
+		
 		<!-- MySql 적용 -->
 		<dependency> 
 			<groupId>mysql</groupId>
@@ -55,6 +77,7 @@
 			<version>8.0.30</version>
 		</dependency>
 		<!-- MySql 적용 끝 -->
+		
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

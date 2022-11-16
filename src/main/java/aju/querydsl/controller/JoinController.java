@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import aju.querydsl.dto.PeopleDto;
 import aju.querydsl.service.MainServiceImpl;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @RestController
 public class JoinController {
 
@@ -22,7 +24,10 @@ public class JoinController {
 	
 	// Company Id에 등록된 User 목록 + company Name
 	@GetMapping("/users/company/{id}")
-	public List<PeopleDto> companyPeople(@PathVariable Long id){		
-		return mainService.findByCompanyUsers(id);
+	public List<PeopleDto> companyPeople(@PathVariable Long id){
+		log.info("-----------------joinList 조회 !!!!!!! -----------------");
+		List<PeopleDto> joinList = mainService.findByCompanyUsers(id);		
+		log.info("-----------------"+joinList+"----------------------");
+		return joinList;
 	}	
 }
