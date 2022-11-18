@@ -4,6 +4,8 @@
 	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
 			<layout class="aju.querydsl.config.MaskingPatternLayout">
+				<maskPattern>\"query\":\"(\d\d\d+)\"</maskPattern>
+				<maskPattern>\"ivrCalldata\":\"(.*?)\"</maskPattern>
 				<maskPattern>\|\s*ivrCalldata\s*:\s*(.*?)\s*\|</maskPattern>
 				<maskPattern>\|\s*query\s*:\s*(\d\d\d+)\s*\|</maskPattern>
 				<pattern>[%d{HH:mm:ss.SSS}] [%thread] [%-5level] %-40.40logger{39} : %msg%n </pattern>
@@ -15,10 +17,8 @@
 		<file>/Users/JeongIn/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/querydsl/logs/logtest.log</file>
 			<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
 				<layout class="aju.querydsl.config.MaskingPatternLayout">
-					<!--
-					<maskPattern>\"userName\"\s*:\w*\"(.*?)\"</maskPattern>
-					<maskPattern>\"companyName\"\s*:\s*\"(.*?)\"</maskPattern>
-					-->
+					<maskPattern>\"query\"\s*:\w*\"(\d\d\d+)\"</maskPattern>
+					<maskPattern>\"ivrCalldata\"\s*:\s*\"(.*?)\"</maskPattern>
 					<maskPattern>\|\s*ivrCalldata\s*:\s*(.*?)\s*\|</maskPattern>
 					<maskPattern>\|\s*query\s*:\s*(\d\d\d+)\s*\|</maskPattern>
 					<pattern>[%d{HH:mm:ss.SSS}] [%thread] [%-5level] %-40.40logger{39} : %msg%n </pattern>

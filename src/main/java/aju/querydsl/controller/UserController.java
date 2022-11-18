@@ -57,6 +57,10 @@ public class UserController {
 		String ivrNull = "[14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : 1234 | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata :  | bargelnAcpYn : ";
 		String ivr1 = "[14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : 1234 | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : 1 | bargelnAcpYn : ";
 		
+		String queryPattern = "[18:07:27.838] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : getUser to userJson ---->>>> {\"userId\":1,\"userName\":\"test\",\"userEmail\":\"jji@aju.co.kr\",\"ivrCalldata\":\"325256843401      1111    \",\"query\":\"1234\"}";
+		
+		System.out.println("test String " + queryPattern);
+		
 		log.info("getUser to userJson ---->>>> "+userJson.toString());
 		log.info("queryTimeout ---->>>> "+queryTimeout);
 		log.info("query1234 ---->>>> "+query1234);
@@ -65,6 +69,8 @@ public class UserController {
 		log.info(" ");
 		log.info("ivrNull ---->>>> "+ivrNull);
 		log.info("ivr1 ---->>>> "+ivr1);
+		log.info("-----------------another Pattern--------------------");
+		log.info("queryPattern ---->>>> "+queryPattern);
 		log.info("----------------------------------------------------");
 		return userJson;		
 	}
