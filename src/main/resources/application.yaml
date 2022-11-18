@@ -5,7 +5,7 @@ spring:
   profiles:
     active: local
   jpa:
-    show-sql: true
+    show-sql: false
     hibernate:
       ddl-auto: none
   mvc:
@@ -16,11 +16,9 @@ spring:
     url: jdbc:mysql://localhost:3306/qms
     username: root 
     password: 1234
-
 # h2:
 #  datasource:
 #    driver-class-name: org.h2.Driver
 #    url: jdbc:h2:tcp://localhost/~/test
 #    username: sa
-#    password:
- 
+#    password: 

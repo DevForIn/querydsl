@@ -1,0 +1,515 @@
+[08:57:00.974] [main] [INFO ] aju.querydsl.QuerydslApplication         : Starting QuerydslApplication using Java 17.0.4.1 on LAPTOP-715ISHLD with PID 9904 (C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl\target\classes started by JeongIn in C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl)
+[08:57:00.977] [main] [INFO ] aju.querydsl.QuerydslApplication         : The following 1 profile is active: "local"
+[08:57:01.686] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[08:57:01.743] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+[08:57:02.288] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[08:57:02.297] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+[08:57:02.298] [main] [INFO ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[08:57:02.298] [main] [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+[08:57:02.424] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[08:57:02.424] [main] [INFO ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1399 ms
+[08:57:02.570] [main] [INFO ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[08:57:02.620] [main] [INFO ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+[08:57:02.755] [main] [INFO ] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[08:57:02.839] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[08:57:03.096] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[08:57:03.123] [main] [INFO ] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[08:57:03.619] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[08:57:03.628] [main] [INFO ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[08:57:04.067] [main] [WARN ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[08:57:04.432] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+[08:57:04.452] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[08:57:04.616] [main] [INFO ] aju.querydsl.QuerydslApplication         : Started QuerydslApplication in 3.979 seconds (JVM running for 4.732)
+[08:57:04.618] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[08:57:04.619] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[08:57:04.619] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[08:57:04.619] [main] [INFO ] aju.querydsl.QuerydslApplication         : ------------------------- R U N -----------------------------
+[08:57:04.619] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[08:57:04.619] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[08:57:04.619] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[08:57:06.892] [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[08:57:06.892] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[08:57:06.893] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[08:57:06.922] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[08:57:07.125] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : getUser to userJson ---->>>> {"userId":1,"userName":"JeongIn","userEmail":"jji@aju.co.kr","userAge":31,"company":{"companyId":1,"companyName":"아주큐엠에스"}}
+[08:57:07.127] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testJson to userJson ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query :********** nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : 325256843401      1111     | bargelnAcpYn : | consultGrupCd : | ansUtter(10-letter) :  | preTime : 0.086 | mciSvcLogList : null | speakerAnalysisYn : | pressRsultDstic : 0 |
+[08:57:07.128] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[08:57:38.150] [RMI TCP Connection(4)-127.0.0.1] [INFO ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+[08:57:38.187] [RMI TCP Connection(4)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8080"]
+[08:57:38.187] [RMI TCP Connection(4)-127.0.0.1] [INFO ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[08:57:38.188] [RMI TCP Connection(4)-127.0.0.1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[08:57:38.191] [RMI TCP Connection(4)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8080"]
+[08:57:38.193] [RMI TCP Connection(4)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8080"]
+[08:57:38.197] [RMI TCP Connection(4)-127.0.0.1] [INFO ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[08:57:38.198] [RMI TCP Connection(4)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[08:57:38.206] [RMI TCP Connection(4)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[08:57:41.849] [main] [INFO ] aju.querydsl.QuerydslApplication         : Starting QuerydslApplication using Java 17.0.4.1 on LAPTOP-715ISHLD with PID 8132 (C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl\target\classes started by JeongIn in C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl)
+[08:57:41.851] [main] [INFO ] aju.querydsl.QuerydslApplication         : The following 1 profile is active: "local"
+[08:57:42.550] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[08:57:42.610] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+[08:57:43.157] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[08:57:43.168] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+[08:57:43.169] [main] [INFO ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[08:57:43.169] [main] [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+[08:57:43.293] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[08:57:43.293] [main] [INFO ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1401 ms
+[08:57:43.448] [main] [INFO ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[08:57:43.495] [main] [INFO ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+[08:57:43.632] [main] [INFO ] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[08:57:43.715] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[08:57:43.983] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[08:57:44.011] [main] [INFO ] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[08:57:44.532] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[08:57:44.542] [main] [INFO ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[08:57:45.018] [main] [WARN ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[08:57:45.433] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+[08:57:45.455] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[08:57:45.641] [main] [INFO ] aju.querydsl.QuerydslApplication         : Started QuerydslApplication in 4.138 seconds (JVM running for 4.902)
+[08:57:45.644] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[08:57:45.644] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[08:57:45.644] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[08:57:45.644] [main] [INFO ] aju.querydsl.QuerydslApplication         : ------------------------- R U N -----------------------------
+[08:57:45.644] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[08:57:45.644] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[08:57:45.644] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[08:57:48.232] [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[08:57:48.232] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[08:57:48.233] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[08:57:48.261] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[08:57:48.438] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : getUser to userJson ---->>>> {"userId":1,"userName":"JeongIn","userEmail":"jji@aju.co.kr","userAge":31,"company":{"companyId":1,"companyName":"아주큐엠에스"}}
+[08:57:48.439] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testJson to userJson ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query************ nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : 325256843401      1111     | bargelnAcpYn : | consultGrupCd : | ansUtter(10-letter) :  | preTime : 0.086 | mciSvcLogList : null | speakerAnalysisYn : | pressRsultDstic : 0 |
+[08:57:48.439] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[08:59:47.410] [RMI TCP Connection(4)-127.0.0.1] [INFO ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+[08:59:47.456] [RMI TCP Connection(4)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8080"]
+[08:59:47.457] [RMI TCP Connection(4)-127.0.0.1] [INFO ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[08:59:47.458] [RMI TCP Connection(4)-127.0.0.1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[08:59:47.461] [RMI TCP Connection(4)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8080"]
+[08:59:47.462] [RMI TCP Connection(4)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8080"]
+[08:59:47.467] [RMI TCP Connection(4)-127.0.0.1] [INFO ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[08:59:47.469] [RMI TCP Connection(4)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[08:59:47.489] [RMI TCP Connection(4)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[08:59:51.086] [main] [INFO ] aju.querydsl.QuerydslApplication         : Starting QuerydslApplication using Java 17.0.4.1 on LAPTOP-715ISHLD with PID 20576 (C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl\target\classes started by JeongIn in C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl)
+[08:59:51.089] [main] [INFO ] aju.querydsl.QuerydslApplication         : The following 1 profile is active: "local"
+[08:59:51.799] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[08:59:51.872] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+[08:59:52.393] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[08:59:52.402] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+[08:59:52.403] [main] [INFO ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[08:59:52.403] [main] [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+[08:59:52.529] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[08:59:52.529] [main] [INFO ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1400 ms
+[08:59:52.679] [main] [INFO ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[08:59:52.722] [main] [INFO ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+[08:59:52.870] [main] [INFO ] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[08:59:52.956] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[08:59:53.216] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[08:59:53.245] [main] [INFO ] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[08:59:53.737] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[08:59:53.746] [main] [INFO ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[08:59:54.192] [main] [WARN ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[08:59:54.564] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+[08:59:54.597] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[08:59:54.770] [main] [INFO ] aju.querydsl.QuerydslApplication         : Started QuerydslApplication in 4.033 seconds (JVM running for 4.806)
+[08:59:54.773] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[08:59:54.773] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[08:59:54.773] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[08:59:54.773] [main] [INFO ] aju.querydsl.QuerydslApplication         : ------------------------- R U N -----------------------------
+[08:59:54.773] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[08:59:54.773] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[08:59:54.774] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[08:59:57.332] [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[08:59:57.333] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[08:59:57.336] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+[08:59:57.366] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[08:59:57.583] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : getUser to userJson ---->>>> {"userId":1,"userName":"JeongIn","userEmail":"jji@aju.co.kr","userAge":31,"company":{"companyId":1,"companyName":"아주큐엠에스"}}
+[08:59:57.584] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testJson to userJson ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query ********* | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : 325256843401      1111     | bargelnAcpYn : | consultGrupCd : | ansUtter(10-letter) :  | preTime : 0.086 | mciSvcLogList : null | speakerAnalysisYn : | pressRsultDstic : 0 |
+[08:59:57.585] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[09:00:58.407] [RMI TCP Connection(3)-127.0.0.1] [INFO ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+[09:00:58.429] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8080"]
+[09:00:58.429] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[09:00:58.431] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[09:00:58.433] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8080"]
+[09:00:58.435] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8080"]
+[09:00:58.438] [RMI TCP Connection(3)-127.0.0.1] [INFO ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[09:00:58.440] [RMI TCP Connection(3)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[09:00:58.447] [RMI TCP Connection(3)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[09:01:01.990] [main] [INFO ] aju.querydsl.QuerydslApplication         : Starting QuerydslApplication using Java 17.0.4.1 on LAPTOP-715ISHLD with PID 4856 (C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl\target\classes started by JeongIn in C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl)
+[09:01:01.993] [main] [INFO ] aju.querydsl.QuerydslApplication         : The following 1 profile is active: "local"
+[09:01:02.689] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[09:01:02.751] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+[09:01:03.240] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[09:01:03.249] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+[09:01:03.249] [main] [INFO ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[09:01:03.249] [main] [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+[09:01:03.374] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[09:01:03.375] [main] [INFO ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1344 ms
+[09:01:03.557] [main] [INFO ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[09:01:03.608] [main] [INFO ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+[09:01:03.752] [main] [INFO ] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[09:01:03.857] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[09:01:04.133] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[09:01:04.164] [main] [INFO ] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[09:01:04.640] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[09:01:04.650] [main] [INFO ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[09:01:05.086] [main] [WARN ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[09:01:05.450] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+[09:01:05.472] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[09:01:05.636] [main] [INFO ] aju.querydsl.QuerydslApplication         : Started QuerydslApplication in 4.018 seconds (JVM running for 4.786)
+[09:01:05.639] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:01:05.639] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:01:05.639] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:01:05.639] [main] [INFO ] aju.querydsl.QuerydslApplication         : ------------------------- R U N -----------------------------
+[09:01:05.639] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:01:05.639] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:01:05.639] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:01:07.087] [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[09:01:07.087] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[09:01:07.088] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[09:01:07.117] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[09:01:07.292] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : getUser to userJson ---->>>> {"userId":1,"userName":"JeongIn","userEmail":"jji@aju.co.kr","userAge":31,"company":{"companyId":1,"companyName":"아주큐엠에스"}}
+[09:01:07.293] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testJson to userJson ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : ******* | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : 325256843401      1111     | bargelnAcpYn : | consultGrupCd : | ansUtter(10-letter) :  | preTime : 0.086 | mciSvcLogList : null | speakerAnalysisYn : | pressRsultDstic : 0 |
+[09:01:07.293] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[09:02:14.897] [RMI TCP Connection(3)-127.0.0.1] [INFO ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+[09:02:14.930] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8080"]
+[09:02:14.931] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[09:02:14.932] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[09:02:14.935] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8080"]
+[09:02:14.937] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8080"]
+[09:02:14.941] [RMI TCP Connection(3)-127.0.0.1] [INFO ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[09:02:14.942] [RMI TCP Connection(3)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[09:02:14.949] [RMI TCP Connection(3)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[09:02:17.700] [main] [INFO ] aju.querydsl.QuerydslApplication         : Starting QuerydslApplication using Java 17.0.4.1 on LAPTOP-715ISHLD with PID 9584 (C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl\target\classes started by JeongIn in C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl)
+[09:02:17.703] [main] [INFO ] aju.querydsl.QuerydslApplication         : The following 1 profile is active: "local"
+[09:02:18.412] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[09:02:18.470] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+[09:02:18.952] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[09:02:18.961] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+[09:02:18.961] [main] [INFO ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[09:02:18.961] [main] [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+[09:02:19.081] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[09:02:19.082] [main] [INFO ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1322 ms
+[09:02:19.228] [main] [INFO ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[09:02:19.281] [main] [INFO ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+[09:02:19.413] [main] [INFO ] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[09:02:19.497] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[09:02:19.760] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[09:02:19.792] [main] [INFO ] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[09:02:20.280] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[09:02:20.289] [main] [INFO ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[09:02:20.852] [main] [WARN ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[09:02:21.327] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+[09:02:21.351] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[09:02:21.554] [main] [INFO ] aju.querydsl.QuerydslApplication         : Started QuerydslApplication in 4.203 seconds (JVM running for 4.906)
+[09:02:21.558] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:02:21.559] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:02:21.559] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:02:21.559] [main] [INFO ] aju.querydsl.QuerydslApplication         : ------------------------- R U N -----------------------------
+[09:02:21.559] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:02:21.559] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:02:21.559] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:02:24.653] [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[09:02:24.654] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[09:02:24.655] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[09:02:24.688] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[09:02:24.871] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : getUser to userJson ---->>>> {"userId":1,"userName":"JeongIn","userEmail":"jji@aju.co.kr","userAge":31,"company":{"companyId":1,"companyName":"아주큐엠에스"}}
+[09:02:24.872] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testJson to userJson ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : timeout | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | consultGrupCd : | ansUtter(10-letter) :  | preTime : 0.086 | mciSvcLogList : null | speakerAnalysisYn : | pressRsultDstic : 0 |
+[09:02:24.872] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[09:04:35.205] [RMI TCP Connection(7)-127.0.0.1] [INFO ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+[09:04:35.230] [RMI TCP Connection(7)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8080"]
+[09:04:35.230] [RMI TCP Connection(7)-127.0.0.1] [INFO ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[09:04:35.232] [RMI TCP Connection(7)-127.0.0.1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[09:04:35.234] [RMI TCP Connection(7)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8080"]
+[09:04:35.236] [RMI TCP Connection(7)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8080"]
+[09:04:35.240] [RMI TCP Connection(7)-127.0.0.1] [INFO ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[09:04:35.241] [RMI TCP Connection(7)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[09:04:35.249] [RMI TCP Connection(7)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[09:04:40.022] [main] [INFO ] aju.querydsl.QuerydslApplication         : Starting QuerydslApplication using Java 17.0.4.1 on LAPTOP-715ISHLD with PID 3516 (C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl\target\classes started by JeongIn in C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl)
+[09:04:40.024] [main] [INFO ] aju.querydsl.QuerydslApplication         : The following 1 profile is active: "local"
+[09:04:40.723] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[09:04:40.784] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+[09:04:41.276] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[09:04:41.286] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+[09:04:41.287] [main] [INFO ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[09:04:41.287] [main] [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+[09:04:41.412] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[09:04:41.412] [main] [INFO ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1341 ms
+[09:04:41.569] [main] [INFO ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[09:04:41.613] [main] [INFO ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+[09:04:41.747] [main] [INFO ] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[09:04:41.833] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[09:04:42.102] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[09:04:42.130] [main] [INFO ] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[09:04:42.619] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[09:04:42.629] [main] [INFO ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[09:04:43.071] [main] [WARN ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[09:04:43.449] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+[09:04:43.484] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[09:04:43.652] [main] [INFO ] aju.querydsl.QuerydslApplication         : Started QuerydslApplication in 3.962 seconds (JVM running for 4.705)
+[09:04:43.656] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:04:43.656] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:04:43.656] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:04:43.656] [main] [INFO ] aju.querydsl.QuerydslApplication         : ------------------------- R U N -----------------------------
+[09:04:43.656] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:04:43.656] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:04:43.656] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:04:49.733] [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[09:04:49.733] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[09:04:49.734] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[09:04:49.774] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[09:04:49.992] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : getUser to userJson ---->>>> {"userId":1,"userName":"JeongIn","userEmail":"jji@aju.co.kr","userAge":31,"company":{"companyId":1,"companyName":"아주큐엠에스"}}
+[09:04:49.994] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : queryTimeout ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : timeout | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | consultGrupCd : | ansUtter(10-letter) :  | preTime : 0.086 | mciSvcLogList : null | speakerAnalysisYn : | pressRsultDstic : 0 |
+[09:04:49.994] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query1234 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : **** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : 
+[09:04:49.995] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query12 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : 12 | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | 
+[09:04:49.995] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[09:06:12.252] [RMI TCP Connection(5)-127.0.0.1] [INFO ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+[09:06:12.284] [RMI TCP Connection(5)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8080"]
+[09:06:12.284] [RMI TCP Connection(5)-127.0.0.1] [INFO ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[09:06:12.286] [RMI TCP Connection(5)-127.0.0.1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[09:06:12.289] [RMI TCP Connection(5)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8080"]
+[09:06:12.291] [RMI TCP Connection(5)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8080"]
+[09:06:12.294] [RMI TCP Connection(5)-127.0.0.1] [INFO ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[09:06:12.296] [RMI TCP Connection(5)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[09:06:12.304] [RMI TCP Connection(5)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[09:06:15.630] [main] [INFO ] aju.querydsl.QuerydslApplication         : Starting QuerydslApplication using Java 17.0.4.1 on LAPTOP-715ISHLD with PID 16656 (C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl\target\classes started by JeongIn in C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl)
+[09:06:15.633] [main] [INFO ] aju.querydsl.QuerydslApplication         : The following 1 profile is active: "local"
+[09:06:16.344] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[09:06:16.400] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+[09:06:16.901] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[09:06:16.910] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+[09:06:16.910] [main] [INFO ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[09:06:16.911] [main] [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+[09:06:17.031] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[09:06:17.031] [main] [INFO ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1342 ms
+[09:06:17.173] [main] [INFO ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[09:06:17.226] [main] [INFO ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+[09:06:17.371] [main] [INFO ] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[09:06:17.458] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[09:06:17.726] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[09:06:17.754] [main] [INFO ] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[09:06:18.223] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[09:06:18.232] [main] [INFO ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[09:06:18.662] [main] [WARN ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[09:06:19.028] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+[09:06:19.047] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[09:06:19.213] [main] [INFO ] aju.querydsl.QuerydslApplication         : Started QuerydslApplication in 3.921 seconds (JVM running for 4.667)
+[09:06:19.216] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:06:19.216] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:06:19.216] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:06:19.216] [main] [INFO ] aju.querydsl.QuerydslApplication         : ------------------------- R U N -----------------------------
+[09:06:19.216] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:06:19.216] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:06:19.216] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:06:26.351] [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[09:06:26.351] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[09:06:26.353] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+[09:06:26.393] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[09:06:26.697] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : getUser to userJson ---->>>> {"userId":1,"userName":"JeongIn","userEmail":"jji@aju.co.kr","userAge":31,"company":{"companyId":1,"companyName":"아주큐엠에스"}}
+[09:06:26.699] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : queryTimeout ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : timeout | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | consultGrupCd : | ansUtter(10-letter) :  | preTime : 0.086 | mciSvcLogList : null | speakerAnalysisYn : | pressRsultDstic : 0 |
+[09:06:26.699] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query1234 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : **** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : 
+[09:06:26.699] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query1233 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : *** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : 
+[09:06:26.699] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query12 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : 89 | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | 
+[09:06:26.700] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[09:07:19.273] [RMI TCP Connection(3)-127.0.0.1] [INFO ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+[09:07:19.307] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8080"]
+[09:07:19.307] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[09:07:19.308] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[09:07:19.311] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8080"]
+[09:07:19.314] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8080"]
+[09:07:19.318] [RMI TCP Connection(3)-127.0.0.1] [INFO ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[09:07:19.319] [RMI TCP Connection(3)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[09:07:19.327] [RMI TCP Connection(3)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[09:07:21.925] [main] [INFO ] aju.querydsl.QuerydslApplication         : Starting QuerydslApplication using Java 17.0.4.1 on LAPTOP-715ISHLD with PID 15944 (C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl\target\classes started by JeongIn in C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl)
+[09:07:21.929] [main] [INFO ] aju.querydsl.QuerydslApplication         : The following 1 profile is active: "local"
+[09:07:22.626] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[09:07:22.679] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+[09:07:23.154] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[09:07:23.164] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+[09:07:23.165] [main] [INFO ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[09:07:23.165] [main] [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+[09:07:23.287] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[09:07:23.287] [main] [INFO ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1316 ms
+[09:07:23.433] [main] [INFO ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[09:07:23.487] [main] [INFO ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+[09:07:23.623] [main] [INFO ] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[09:07:23.708] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[09:07:23.969] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[09:07:24.001] [main] [INFO ] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[09:07:24.475] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[09:07:24.485] [main] [INFO ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[09:07:24.910] [main] [WARN ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[09:07:25.281] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+[09:07:25.302] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[09:07:25.462] [main] [INFO ] aju.querydsl.QuerydslApplication         : Started QuerydslApplication in 3.893 seconds (JVM running for 4.632)
+[09:07:25.465] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:07:25.465] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:07:25.465] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:07:25.465] [main] [INFO ] aju.querydsl.QuerydslApplication         : ------------------------- R U N -----------------------------
+[09:07:25.466] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:07:25.466] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:07:25.466] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:07:31.444] [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[09:07:31.444] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[09:07:31.446] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+[09:07:31.475] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[09:07:31.694] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : getUser to userJson ---->>>> {"userId":1,"userName":"JeongIn","userEmail":"jji@aju.co.kr","userAge":31,"company":{"companyId":1,"companyName":"아주큐엠에스"}}
+[09:07:31.695] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : queryTimeout ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : timeout | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | consultGrupCd : | ansUtter(10-letter) :  | preTime : 0.086 | mciSvcLogList : null | speakerAnalysisYn : | pressRsultDstic : 0 |
+[09:07:31.695] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query1234 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : **** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : 
+[09:07:31.696] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query1233 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : *** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : 
+[09:07:31.696] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query12 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : 89 | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | 
+[09:07:31.696] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[09:08:09.197] [RMI TCP Connection(3)-127.0.0.1] [INFO ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+[09:08:09.228] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8080"]
+[09:08:09.228] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[09:08:09.230] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[09:08:09.233] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8080"]
+[09:08:09.235] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8080"]
+[09:08:09.238] [RMI TCP Connection(3)-127.0.0.1] [INFO ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[09:08:09.240] [RMI TCP Connection(3)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[09:08:09.247] [RMI TCP Connection(3)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[09:08:12.573] [main] [INFO ] aju.querydsl.QuerydslApplication         : Starting QuerydslApplication using Java 17.0.4.1 on LAPTOP-715ISHLD with PID 24132 (C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl\target\classes started by JeongIn in C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl)
+[09:08:12.575] [main] [INFO ] aju.querydsl.QuerydslApplication         : The following 1 profile is active: "local"
+[09:08:13.295] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[09:08:13.354] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+[09:08:13.839] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[09:08:13.848] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+[09:08:13.849] [main] [INFO ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[09:08:13.849] [main] [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+[09:08:13.971] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[09:08:13.971] [main] [INFO ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1355 ms
+[09:08:14.129] [main] [INFO ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[09:08:14.175] [main] [INFO ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+[09:08:14.307] [main] [INFO ] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[09:08:14.391] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[09:08:14.661] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[09:08:14.689] [main] [INFO ] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[09:08:15.159] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[09:08:15.167] [main] [INFO ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[09:08:15.605] [main] [WARN ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[09:08:15.957] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+[09:08:15.977] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[09:08:16.141] [main] [INFO ] aju.querydsl.QuerydslApplication         : Started QuerydslApplication in 3.915 seconds (JVM running for 4.639)
+[09:08:16.144] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:08:16.144] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:08:16.144] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:08:16.144] [main] [INFO ] aju.querydsl.QuerydslApplication         : ------------------------- R U N -----------------------------
+[09:08:16.144] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:08:16.144] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:08:16.144] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:08:17.759] [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[09:08:17.759] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[09:08:17.762] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+[09:08:17.806] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[09:08:18.012] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : getUser to userJson ---->>>> {"userId":1,"userName":"JeongIn","userEmail":"jji@aju.co.kr","userAge":31,"company":{"companyId":1,"companyName":"아주큐엠에스"}}
+[09:08:18.012] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : queryTimeout ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : timeout | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | consultGrupCd : | ansUtter(10-letter) :  | preTime : 0.086 | mciSvcLogList : null | speakerAnalysisYn : | pressRsultDstic : 0 |
+[09:08:18.012] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query1234 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : **** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : 
+[09:08:18.012] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query1233 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : *** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : 
+[09:08:18.013] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query12 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : 89 | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | 
+[09:08:18.013] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[09:25:05.722] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[09:25:05.728] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : getUser to userJson ---->>>> {"userId":1,"userName":"JeongIn","userEmail":"jji@aju.co.kr","userAge":31,"company":{"companyId":1,"companyName":"아주큐엠에스"}}
+[09:25:05.728] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : queryTimeout ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : timeout | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | consultGrupCd : | ansUtter(10-letter) :  | preTime : 0.086 | mciSvcLogList : null | speakerAnalysisYn : | pressRsultDstic : 0 |
+[09:25:05.728] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : query1234 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : **** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : 
+[09:25:05.728] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : query1233 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : *** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : 
+[09:25:05.728] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : query12 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : 89 | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | 
+[09:25:05.728] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[09:31:23.099] [RMI TCP Connection(26)-127.0.0.1] [INFO ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+[09:31:23.122] [RMI TCP Connection(26)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8080"]
+[09:31:23.122] [RMI TCP Connection(26)-127.0.0.1] [INFO ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[09:31:23.123] [RMI TCP Connection(26)-127.0.0.1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[09:31:23.127] [RMI TCP Connection(26)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8080"]
+[09:31:23.129] [RMI TCP Connection(26)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8080"]
+[09:31:23.132] [RMI TCP Connection(26)-127.0.0.1] [INFO ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[09:31:23.134] [RMI TCP Connection(26)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[09:31:23.141] [RMI TCP Connection(26)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[09:31:27.319] [main] [INFO ] aju.querydsl.QuerydslApplication         : Starting QuerydslApplication using Java 17.0.4.1 on LAPTOP-715ISHLD with PID 5560 (C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl\target\classes started by JeongIn in C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl)
+[09:31:27.322] [main] [INFO ] aju.querydsl.QuerydslApplication         : The following 1 profile is active: "local"
+[09:31:28.042] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[09:31:28.098] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+[09:31:28.596] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[09:31:28.604] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+[09:31:28.605] [main] [INFO ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[09:31:28.605] [main] [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+[09:31:28.728] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[09:31:28.728] [main] [INFO ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1365 ms
+[09:31:28.878] [main] [INFO ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[09:31:28.923] [main] [INFO ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+[09:31:29.063] [main] [INFO ] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[09:31:29.158] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[09:31:29.421] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[09:31:29.453] [main] [INFO ] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[09:31:29.948] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[09:31:29.957] [main] [INFO ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[09:31:30.407] [main] [WARN ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[09:31:30.783] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+[09:31:30.807] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[09:31:30.986] [main] [INFO ] aju.querydsl.QuerydslApplication         : Started QuerydslApplication in 4.017 seconds (JVM running for 4.809)
+[09:31:30.989] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:31:30.989] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:31:30.989] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:31:30.989] [main] [INFO ] aju.querydsl.QuerydslApplication         : ------------------------- R U N -----------------------------
+[09:31:30.989] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:31:30.989] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:31:30.989] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:31:34.352] [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[09:31:34.353] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[09:31:34.355] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+[09:31:34.388] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[09:31:34.601] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : getUser to userJson ---->>>> {"userId":1,"userName":"JeongIn","userEmail":"jji@aju.co.kr","userAge":31,"company":{"companyId":1,"companyName":"아주큐엠에스"}}
+[09:31:34.602] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : queryTimeout ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : timeout | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | consultGrupCd : | ansUtter(10-letter) :  | preTime : 0.086 | mciSvcLogList : null | speakerAnalysisYn : | pressRsultDstic : 0 |
+[09:31:34.602] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query1234 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : **** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : 
+[09:31:34.602] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query1233 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : *** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : 
+[09:31:34.602] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query12 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : 89 | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | 
+[09:31:34.602] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   :  
+[09:31:34.603] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ivrNull ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : **** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata :  | bargelnAcpYn : 
+[09:31:34.603] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[09:32:10.634] [RMI TCP Connection(3)-127.0.0.1] [INFO ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+[09:32:10.678] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8080"]
+[09:32:10.678] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[09:32:10.679] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[09:32:10.682] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8080"]
+[09:32:10.683] [RMI TCP Connection(3)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8080"]
+[09:32:10.688] [RMI TCP Connection(3)-127.0.0.1] [INFO ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[09:32:10.690] [RMI TCP Connection(3)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[09:32:10.697] [RMI TCP Connection(3)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[09:32:14.691] [main] [INFO ] aju.querydsl.QuerydslApplication         : Starting QuerydslApplication using Java 17.0.4.1 on LAPTOP-715ISHLD with PID 10484 (C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl\target\classes started by JeongIn in C:\Users\JeongIn\Documents\workspace-spring-tool-suite-4-4.16.0.RELEASE\querydsl)
+[09:32:14.694] [main] [INFO ] aju.querydsl.QuerydslApplication         : The following 1 profile is active: "local"
+[09:32:15.414] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[09:32:15.476] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+[09:32:16.067] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[09:32:16.078] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+[09:32:16.078] [main] [INFO ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[09:32:16.078] [main] [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+[09:32:16.205] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[09:32:16.205] [main] [INFO ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1441 ms
+[09:32:16.359] [main] [INFO ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[09:32:16.403] [main] [INFO ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+[09:32:16.535] [main] [INFO ] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[09:32:16.623] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[09:32:16.892] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[09:32:16.924] [main] [INFO ] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[09:32:17.465] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[09:32:17.474] [main] [INFO ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[09:32:17.924] [main] [WARN ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[09:32:18.290] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+[09:32:18.311] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[09:32:18.481] [main] [INFO ] aju.querydsl.QuerydslApplication         : Started QuerydslApplication in 4.121 seconds (JVM running for 4.881)
+[09:32:18.484] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:32:18.484] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:32:18.484] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:32:18.484] [main] [INFO ] aju.querydsl.QuerydslApplication         : ------------------------- R U N -----------------------------
+[09:32:18.485] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:32:18.485] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[09:32:18.485] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[09:32:21.107] [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[09:32:21.107] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[09:32:21.108] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[09:32:21.139] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[09:32:21.326] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : getUser to userJson ---->>>> {"userId":1,"userName":"JeongIn","userEmail":"jji@aju.co.kr","userAge":31,"company":{"companyId":1,"companyName":"아주큐엠에스"}}
+[09:32:21.326] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : queryTimeout ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : timeout | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | consultGrupCd : | ansUtter(10-letter) :  | preTime : 0.086 | mciSvcLogList : null | speakerAnalysisYn : | pressRsultDstic : 0 |
+[09:32:21.326] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query1234 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : **** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : 
+[09:32:21.326] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query1233 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : *** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : 
+[09:32:21.326] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : query12 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : 89 | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : ************************** | bargelnAcpYn : | 
+[09:32:21.326] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   :  
+[09:32:21.326] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ivrNull ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : **** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata :  | bargelnAcpYn : 
+[09:32:21.326] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ivr1 ---->>>> [14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : **** | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : * | bargelnAcpYn : 
+[09:32:21.327] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------

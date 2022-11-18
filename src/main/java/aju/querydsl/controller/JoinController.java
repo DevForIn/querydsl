@@ -18,16 +18,18 @@ public class JoinController {
 	private MainServiceImpl mainService;
 
 	@Autowired
-	public JoinController(MainServiceImpl mainService) {
+	public JoinController(MainServiceImpl mainService) {		
 		this.mainService = mainService;
+		
 	}
 	
 	// Company Id에 등록된 User 목록 + company Name
 	@GetMapping("/users/company/{id}")
 	public List<PeopleDto> companyPeople(@PathVariable Long id){
-		log.info("-----------------joinList 조회 !!!!!!! -----------------");
+		log.info("-----------------companyPeople !!!!!! -----------------");
 		List<PeopleDto> joinList = mainService.findByCompanyUsers(id);		
-		log.info("-----------------"+joinList+"----------------------");
+		log.info("joinList --->>>> "+joinList);
+		log.info("-------------------------------------------------------");
 		return joinList;
 	}	
 }

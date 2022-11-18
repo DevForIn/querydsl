@@ -78,8 +78,7 @@ public class MainServiceImpl implements MainService {
 			System.out.println("해당 Company ID의 테이블이 존재하지 않음.");
 			return null;
 		} 
-		List<PeopleDto> people = repositorySupport.findByCompanyUsers(id);
-		System.out.println(people);
+		List<PeopleDto> people = repositorySupport.findByCompanyUsers(id);		
 		return people;				
 	}
 	
