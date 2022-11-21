@@ -35,19 +35,31 @@ public class MaskingPatternLayout extends PatternLayout{
 		Matcher matcher = multilinePattern.matcher(sb);
 		
 		while(matcher.find()){
-//			System.out.println("while ->"+message);
-//			System.out.println("matcher.group() -> " + matcher.group());
-//			System.out.println("matcher.group().toString() -> "+matcher.group().toString());			
-//			System.out.println("matcher.start() -> " + matcher.start());
-//			System.out.println("matcher.end() ->" + matcher.end());
+			System.out.println("while ->"+message);
+			System.out.println("matcher.group() -> " + matcher.group());
+			System.out.println("matcher.group().toString() -> "+matcher.group().toString());			
+			System.out.println("matcher.start() -> " + matcher.start());
+			System.out.println("matcher.end() ->" + matcher.end());
 
-			String str = matcher.group().split(" ")[1];
-			
-			int paramLeng = str.length()+5;
-			
-			for(int i=matcher.start()+paramLeng;i<matcher.end()-2;i++) {
-				sb.setCharAt(i, '*');	
+			String str = matcher.group().split(":")[0];
+			int paramLeng = 0;
+			System.out.println("str -> " + str);
+			if("| query ".equals(str)|| "| ivrCalldata ".equals(str)) { 
+				System.out.println("if str -> " + str);
+				paramLeng = str.length()+2;
+				
+				for(int i=matcher.start()+paramLeng;i<matcher.end()-2;i++) {
+					sb.setCharAt(i, '*');	
+				}
 			}
+			else {
+				System.out.println("else str -> " + str);
+				paramLeng = str.length()+2;
+				for(int i=matcher.start()+paramLeng;i<matcher.end()-1;i++) {
+					sb.setCharAt(i, '*');
+				}
+			}
+			
 		}		
 		return sb.toString();
 	}	

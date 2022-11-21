@@ -45,7 +45,7 @@ public class UserController {
 	@GetMapping("/users/{id}")
 	public String getUser(@PathVariable Long id) {
 		log.info("-----------------getUser !!!!!! -----------------");
-		User user = mainService.findById(id);		
+		User user = mainService.findById(id);
 		String userJson = gson.toJson(user);
 		// {"companyId":2,"companyName":"COGNET9"}
 		String queryTimeout = "[14:08:59.327] [http-nio-8080-exec-8] [INFO] | c.d.irestapi.controller.ChatController:REST-MESSAGEIOUT-sessionld:c7b9d0a66354 | query : timeout | nextinputTypeCd:01 | NextinputLength:0 | ivrCalldata : 325256843401      1111     | bargelnAcpYn : | consultGrupCd : | ansUtter(10-letter) :  | preTime : 0.086 | mciSvcLogList : null | speakerAnalysisYn : | pressRsultDstic : 0 |";
@@ -65,7 +65,7 @@ public class UserController {
 		log.info("queryTimeout ---->>>> "+queryTimeout);
 		log.info("query1234 ---->>>> "+query1234);
 		log.info("query1233 ---->>>> "+query123);
-		log.info("query12 ---->>>> "+query12);
+		log.info("query12 ---->>>> "+query12); 
 		log.info(" ");
 		log.info("ivrNull ---->>>> "+ivrNull);
 		log.info("ivr1 ---->>>> "+ivr1);
