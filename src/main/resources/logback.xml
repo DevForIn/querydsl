@@ -4,10 +4,20 @@
 	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
 			<layout class="aju.querydsl.config.MaskingPatternLayout">
+<!--
+				<maskPattern>\|\s*ivrCalldata\s*:\s*(.*?)\s*\|</maskPattern>			
 				<maskPattern>\"query\":\"(\d\d\d+)\"</maskPattern>
-				<maskPattern>\"ivrCalldata\":\"(.*?)\"</maskPattern>
-				<maskPattern>\|\s*ivrCalldata\s*:\s*(.*?)\s*\|</maskPattern>
 				<maskPattern>\|\s*query\s*:\s*(\d\d\d+)\s*\|</maskPattern>
+-->
+				<maskPattern>\"ivrCalldata\":\"(.*?)\"</maskPattern>				
+				<maskPattern>ivrCalldata=(.*?)\,</maskPattern>										
+				<maskPattern>ivrCalldata=(.*?)\)</maskPattern>
+				<maskPattern>\"phoneNumber\":\"(.*?)\"</maskPattern>
+				<maskPattern>phoneNumber=(.*?)\,</maskPattern>	
+				<maskPattern>phoneNumber=(.*?)\)</maskPattern>
+				<maskPattern>addtnlInfoVal=(.*?)\,</maskPattern>	
+				<maskPattern>addtnlInfoVal=(.*?)\)(.*?)\)</maskPattern>		
+				<maskPattern>addtnlInfoVal=(.*?)\)</maskPattern>				
 				<pattern>[%d{HH:mm:ss.SSS}] [%thread] [%-5level] %-40.40logger{39} : %msg%n </pattern>
 			</layout>
 		</encoder>
