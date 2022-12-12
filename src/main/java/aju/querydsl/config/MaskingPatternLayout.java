@@ -38,7 +38,6 @@ public class MaskingPatternLayout extends PatternLayout{
 			System.out.println("while ->"+message);
 			System.out.println("matcher.group() -> " + matcher.group());
 			System.out.println("matcher.group().toString() -> "+matcher.group().toString());			
-
 			String str = matcher.group().split(":")[0];
 			int paramLeng = str.length()+2;
 			System.out.println("str -> " + str);

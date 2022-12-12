@@ -27,10 +27,15 @@
 		<file>/Users/JeongIn/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/querydsl/logs/logtest.log</file>
 			<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
 				<layout class="aju.querydsl.config.MaskingPatternLayout">
-					<maskPattern>\"query\":\"(\d\d\d+)\"</maskPattern>
-					<maskPattern>\"ivrCalldata\"\:\"(.*?)\"</maskPattern>
-					<maskPattern>\|\s*ivrCalldata\s*:\s*(.*?)\s*\|</maskPattern>
-					<maskPattern>\|\s*query\s*:\s*(\d\d\d+)\s*\|</maskPattern>
+					<maskPattern>\"ivrCalldata\":\"(.*?)\"</maskPattern>				
+					<maskPattern>ivrCalldata=(.*?)\,</maskPattern>										
+					<maskPattern>ivrCalldata=(.*?)\)</maskPattern>
+					<maskPattern>\"phoneNumber\":\"(.*?)\"</maskPattern>
+					<maskPattern>phoneNumber=(.*?)\,</maskPattern>	
+					<maskPattern>phoneNumber=(.*?)\)</maskPattern>
+					<maskPattern>addtnlInfoVal=(.*?)\,</maskPattern>	
+					<maskPattern>addtnlInfoVal=(.*?)\)(.*?)\)</maskPattern>		
+					<maskPattern>addtnlInfoVal=(.*?)\)</maskPattern>	
 					<pattern>[%d{HH:mm:ss.SSS}] [%thread] [%-5level] %-40.40logger{39} : %msg%n </pattern>
 				</layout>
 			</encoder>
@@ -39,22 +44,6 @@
 			<maxHistory>30</maxHistory>
 		</rollingPolicy>
 	</appender>
-<!-- 
-	<appender name="mask" class="ch.qos.logback.core.ConsoleAppender">
-		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
-			<layout class="aju.querydsl.config.MaskingPatternLayout">
-				<maskPattern>\"companyName\"\s*:\w*\"(.*?)\"</maskPattern>
-				<maskPattern>\"userName\"\s*:\w*\"(.*?)\"</maskPattern>
-				<maskPattern>\"companyName\"\s*:\s*\"(.*?)\"</maskPattern>
-				<pattern>[%-5level] [%d{ISO8601,UTC}] [%thread] %c: %m%n%rootException</pattern>
-			</layout>
-		</encoder>
-	</appender>
-	
-	<logger name="aju" level="info">
-		<appender-ref ref="mask"/>
-	</logger>
--->
 	
 	<root level="info">
 		<appender-ref ref="console"/>
