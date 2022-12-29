@@ -24,7 +24,7 @@
 	</appender>
 	
 	<appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/Users/JeongIn/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/querydsl/logs/logtest.log</file>
+		<file>/Users/jeongin/git/querydsl/logs/logtest.log</file>
 			<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
 				<layout class="aju.querydsl.config.MaskingPatternLayout">
 					<maskPattern>\"ivrCalldata\":\"(.*?)\"</maskPattern>				
@@ -40,7 +40,7 @@
 				</layout>
 			</encoder>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<FileNamePattern>/Users/JeongIn/Documents/workspace-spring-tool-suite-4-4.16.0.RELEASE/querydsl/logs/logtest.%d{yyyyMMdd}.log</FileNamePattern>
+			<FileNamePattern>/Users/jeongin/git/querydsl/logs/logtest.%d{yyyyMMdd}.log</FileNamePattern>
 			<maxHistory>30</maxHistory>
 		</rollingPolicy>
 	</appender>

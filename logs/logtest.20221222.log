@@ -1,0 +1,218 @@
+[17:26:42.087] [main] [INFO ] aju.querydsl.QuerydslApplication         : Starting QuerydslApplication using Java 17.0.4.1 on jeongjeong-in-ui-MacBookAir.local with PID 10779 (/Users/jeongin/git/querydsl/target/classes started by jeongin in /Users/jeongin/git/querydsl)
+[17:26:42.089] [main] [INFO ] aju.querydsl.QuerydslApplication         : The following 1 profile is active: "local"
+[17:26:42.373] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[17:26:42.394] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+[17:26:42.607] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[17:26:42.610] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+[17:26:42.611] [main] [INFO ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[17:26:42.611] [main] [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+[17:26:42.649] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[17:26:42.649] [main] [INFO ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 543 ms
+[17:26:42.716] [main] [INFO ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[17:26:42.732] [main] [INFO ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+[17:26:42.785] [main] [INFO ] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[17:26:42.823] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[17:26:42.952] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[17:26:42.965] [main] [INFO ] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[17:26:43.160] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[17:26:43.164] [main] [INFO ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[17:26:43.363] [main] [WARN ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[17:26:43.530] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+[17:26:43.538] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[17:26:43.612] [main] [INFO ] aju.querydsl.QuerydslApplication         : Started QuerydslApplication in 1.654 seconds (JVM running for 1.915)
+[17:26:43.613] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[17:26:43.613] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[17:26:43.613] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[17:26:43.613] [main] [INFO ] aju.querydsl.QuerydslApplication         : ------------------------- R U N -----------------------------
+[17:26:43.613] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[17:26:43.613] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[17:26:43.613] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[17:26:46.732] [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[17:26:46.732] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[17:26:46.734] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+[17:26:46.752] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : test
+[17:26:46.752] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : test
+[17:26:46.752] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[17:26:46.842] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : queryPattern ---->>>> {"userId":1,"userName":"test","userEmail":"jji@aju.co.kr","ivrCalldata":"**************************","query":"1234"}
+[17:26:46.842] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------another Pattern--------------------
+[17:26:46.842] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testMaksing ---->>>> {"phoneNumber":"***********", phoneNumber=***********, ivrCalldata=********************)
+[17:26:46.842] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testMaksing2 ---->>>> {"ivrCalldata":"***********************",ivrCalldata=*********************, phoneNumber=*******)
+[17:26:46.843] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testMaksing3 ---->>>> {"addtnlInfoVal=********************************************************************************************************************)
+[17:26:46.843] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testMaksing4 ---->>>> {"addtnlInfoVal=********************************************************************************************************************, test=12123^123)
+[17:26:46.843] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testMaksing5 ---->>>> {"addtnlInfoVal=********************************************************************************************************)
+[17:26:46.844] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testMaksing6 ---->>>> {"addtnlInfoVal=********************************************************************************************************, test=12123^123)
+[17:26:46.844] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[17:26:50.902] [RMI TCP Connection(2)-127.0.0.1] [INFO ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+[17:26:50.910] [RMI TCP Connection(2)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8080"]
+[17:26:50.910] [RMI TCP Connection(2)-127.0.0.1] [INFO ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[17:26:50.911] [RMI TCP Connection(2)-127.0.0.1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[17:26:50.913] [RMI TCP Connection(2)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8080"]
+[17:26:50.916] [RMI TCP Connection(2)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8080"]
+[17:26:50.921] [RMI TCP Connection(2)-127.0.0.1] [INFO ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[17:26:50.923] [RMI TCP Connection(2)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[17:26:50.952] [RMI TCP Connection(2)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[17:36:33.953] [main] [INFO ] aju.querydsl.QuerydslApplication         : Starting QuerydslApplication using Java 17.0.4.1 on jeongjeong-in-ui-MacBookAir.local with PID 11434 (/Users/jeongin/git/querydsl/target/classes started by jeongin in /Users/jeongin/git/querydsl)
+[17:36:33.954] [main] [INFO ] aju.querydsl.QuerydslApplication         : The following 1 profile is active: "local"
+[17:36:34.241] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[17:36:34.260] [main] [INFO ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+[17:36:34.474] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[17:36:34.478] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+[17:36:34.478] [main] [INFO ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[17:36:34.479] [main] [INFO ] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+[17:36:34.516] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[17:36:34.516] [main] [INFO ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 545 ms
+[17:36:34.584] [main] [INFO ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+[17:36:34.601] [main] [INFO ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+[17:36:34.654] [main] [INFO ] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[17:36:34.690] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[17:36:34.826] [main] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[17:36:34.839] [main] [INFO ] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[17:36:35.044] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[17:36:35.048] [main] [INFO ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[17:36:35.246] [main] [WARN ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[17:36:35.410] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+[17:36:35.418] [main] [INFO ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[17:36:35.492] [main] [INFO ] aju.querydsl.QuerydslApplication         : Started QuerydslApplication in 1.697 seconds (JVM running for 1.973)
+[17:36:35.493] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[17:36:35.493] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[17:36:35.493] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[17:36:35.493] [main] [INFO ] aju.querydsl.QuerydslApplication         : ------------------------- R U N -----------------------------
+[17:36:35.493] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[17:36:35.494] [main] [INFO ] aju.querydsl.QuerydslApplication         : -------------------------------------------------------------
+[17:36:35.494] [main] [INFO ] aju.querydsl.QuerydslApplication         : 
+[17:36:39.724] [http-nio-8080-exec-1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[17:36:39.724] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[17:36:39.725] [http-nio-8080-exec-1] [INFO ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[17:36:39.743] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : test
+[17:36:39.743] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : test
+[17:36:39.743] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[17:36:39.830] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : queryPattern ---->>>> {"userId":1,"userName":"test","userEmail":"jji@aju.co.kr","ivrCalldata":"**************************","query":"1234"}
+[17:36:39.830] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : -----------------another Pattern--------------------
+[17:36:39.830] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testMaksing ---->>>> {"phoneNumber":"***********", phoneNumber=***********, ivrCalldata=********************)
+[17:36:39.830] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testMaksing2 ---->>>> {"ivrCalldata":"***********************",ivrCalldata=*********************, phoneNumber=*******)
+[17:36:39.831] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testMaksing3 ---->>>> {"addtnlInfoVal=********************************************************************************************************************)
+[17:36:39.831] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testMaksing4 ---->>>> {"addtnlInfoVal=********************************************************************************************************************, test=12123^123)
+[17:36:39.831] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testMaksing5 ---->>>> {"addtnlInfoVal=********************************************************************************************************)
+[17:36:39.832] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : testMaksing6 ---->>>> {"addtnlInfoVal=********************************************************************************************************, test=12123^123)
+[17:36:39.832] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[17:36:49.379] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : test
+[17:36:49.380] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : test
+[17:36:49.380] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[17:36:49.394] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : queryPattern ---->>>> {"userId":1,"userName":"test","userEmail":"jji@aju.co.kr","ivrCalldata":"**************************","query":"1234"}
+[17:36:49.394] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : -----------------another Pattern--------------------
+[17:36:49.395] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : testMaksing ---->>>> {"phoneNumber":"***********", phoneNumber=***********, ivrCalldata=********************)
+[17:36:49.395] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : testMaksing2 ---->>>> {"ivrCalldata":"***********************",ivrCalldata=*********************, phoneNumber=*******)
+[17:36:49.397] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : testMaksing3 ---->>>> {"addtnlInfoVal=********************************************************************************************************************)
+[17:36:49.398] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : testMaksing4 ---->>>> {"addtnlInfoVal=********************************************************************************************************************, test=12123^123)
+[17:36:49.399] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : testMaksing5 ---->>>> {"addtnlInfoVal=********************************************************************************************************)
+[17:36:49.401] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : testMaksing6 ---->>>> {"addtnlInfoVal=********************************************************************************************************, test=12123^123)
+[17:36:49.402] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[17:36:50.479] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : test
+[17:36:50.480] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : test
+[17:36:50.480] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[17:36:50.498] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : queryPattern ---->>>> {"userId":1,"userName":"test","userEmail":"jji@aju.co.kr","ivrCalldata":"**************************","query":"1234"}
+[17:36:50.499] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : -----------------another Pattern--------------------
+[17:36:50.499] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : testMaksing ---->>>> {"phoneNumber":"***********", phoneNumber=***********, ivrCalldata=********************)
+[17:36:50.499] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : testMaksing2 ---->>>> {"ivrCalldata":"***********************",ivrCalldata=*********************, phoneNumber=*******)
+[17:36:50.500] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : testMaksing3 ---->>>> {"addtnlInfoVal=********************************************************************************************************************)
+[17:36:50.501] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : testMaksing4 ---->>>> {"addtnlInfoVal=********************************************************************************************************************, test=12123^123)
+[17:36:50.502] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : testMaksing5 ---->>>> {"addtnlInfoVal=********************************************************************************************************)
+[17:36:50.503] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : testMaksing6 ---->>>> {"addtnlInfoVal=********************************************************************************************************, test=12123^123)
+[17:36:50.505] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[17:36:58.205] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : test
+[17:36:58.205] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : test
+[17:36:58.205] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[17:36:58.216] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : queryPattern ---->>>> {"userId":1,"userName":"test","userEmail":"jji@aju.co.kr","ivrCalldata":"**************************","query":"1234"}
+[17:36:58.216] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : -----------------another Pattern--------------------
+[17:36:58.217] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : testMaksing ---->>>> {"phoneNumber":"***********", phoneNumber=***********, ivrCalldata=********************)
+[17:36:58.217] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : testMaksing2 ---->>>> {"ivrCalldata":"***********************",ivrCalldata=*********************, phoneNumber=*******)
+[17:36:58.217] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : testMaksing3 ---->>>> {"addtnlInfoVal=********************************************************************************************************************)
+[17:36:58.218] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : testMaksing4 ---->>>> {"addtnlInfoVal=********************************************************************************************************************, test=12123^123)
+[17:36:58.218] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : testMaksing5 ---->>>> {"addtnlInfoVal=********************************************************************************************************)
+[17:36:58.218] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : testMaksing6 ---->>>> {"addtnlInfoVal=********************************************************************************************************, test=12123^123)
+[17:36:58.219] [http-nio-8080-exec-4] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[17:36:59.510] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.UserController   : test
+[17:36:59.511] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.UserController   : test
+[17:36:59.511] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[17:36:59.526] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.UserController   : queryPattern ---->>>> {"userId":1,"userName":"test","userEmail":"jji@aju.co.kr","ivrCalldata":"**************************","query":"1234"}
+[17:36:59.526] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.UserController   : -----------------another Pattern--------------------
+[17:36:59.527] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.UserController   : testMaksing ---->>>> {"phoneNumber":"***********", phoneNumber=***********, ivrCalldata=********************)
+[17:36:59.527] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.UserController   : testMaksing2 ---->>>> {"ivrCalldata":"***********************",ivrCalldata=*********************, phoneNumber=*******)
+[17:36:59.528] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.UserController   : testMaksing3 ---->>>> {"addtnlInfoVal=********************************************************************************************************************)
+[17:36:59.528] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.UserController   : testMaksing4 ---->>>> {"addtnlInfoVal=********************************************************************************************************************, test=12123^123)
+[17:36:59.530] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.UserController   : testMaksing5 ---->>>> {"addtnlInfoVal=********************************************************************************************************)
+[17:36:59.530] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.UserController   : testMaksing6 ---->>>> {"addtnlInfoVal=********************************************************************************************************, test=12123^123)
+[17:36:59.530] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[17:37:28.845] [http-nio-8080-exec-8] [INFO ] aju.querydsl.controller.JoinController   : -----------------companyPeople !!!!!! -----------------
+[17:37:28.871] [http-nio-8080-exec-8] [INFO ] aju.querydsl.controller.JoinController   : joinList --->>>> [PeopleDto(companyName=QMS, name=Jeong JeongIn, email=devforin@gmail.con)]
+[17:37:28.872] [http-nio-8080-exec-8] [INFO ] aju.querydsl.controller.JoinController   : -------------------------------------------------------
+[17:37:30.733] [http-nio-8080-exec-9] [INFO ] aju.querydsl.controller.JoinController   : -----------------companyPeople !!!!!! -----------------
+[17:37:30.750] [http-nio-8080-exec-9] [INFO ] aju.querydsl.controller.JoinController   : joinList --->>>> [PeopleDto(companyName=QMS, name=Jeong JeongIn, email=devforin@gmail.con)]
+[17:37:30.750] [http-nio-8080-exec-9] [INFO ] aju.querydsl.controller.JoinController   : -------------------------------------------------------
+[17:37:31.316] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.JoinController   : -----------------companyPeople !!!!!! -----------------
+[17:37:31.328] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.JoinController   : joinList --->>>> [PeopleDto(companyName=QMS, name=Jeong JeongIn, email=devforin@gmail.con)]
+[17:37:31.328] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.JoinController   : -------------------------------------------------------
+[17:38:21.994] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.JoinController   : -----------------companyPeople !!!!!! -----------------
+[17:38:22.008] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.JoinController   : joinList --->>>> [PeopleDto(companyName=QMS, name=Jeong JeongIn, email=devforin@gmail.con)]
+[17:38:22.008] [http-nio-8080-exec-1] [INFO ] aju.querydsl.controller.JoinController   : -------------------------------------------------------
+[17:38:28.560] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : test
+[17:38:28.560] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : test
+[17:38:28.561] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[17:38:28.577] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : queryPattern ---->>>> {"userId":1,"userName":"test","userEmail":"jji@aju.co.kr","ivrCalldata":"**************************","query":"1234"}
+[17:38:28.577] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : -----------------another Pattern--------------------
+[17:38:28.577] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : testMaksing ---->>>> {"phoneNumber":"***********", phoneNumber=***********, ivrCalldata=********************)
+[17:38:28.578] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : testMaksing2 ---->>>> {"ivrCalldata":"***********************",ivrCalldata=*********************, phoneNumber=*******)
+[17:38:28.578] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : testMaksing3 ---->>>> {"addtnlInfoVal=********************************************************************************************************************)
+[17:38:28.578] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : testMaksing4 ---->>>> {"addtnlInfoVal=********************************************************************************************************************, test=12123^123)
+[17:38:28.578] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : testMaksing5 ---->>>> {"addtnlInfoVal=********************************************************************************************************)
+[17:38:28.578] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : testMaksing6 ---->>>> {"addtnlInfoVal=********************************************************************************************************, test=12123^123)
+[17:38:28.579] [http-nio-8080-exec-2] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[17:38:30.259] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : test
+[17:38:30.259] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : test
+[17:38:30.260] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[17:38:30.273] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : queryPattern ---->>>> {"userId":1,"userName":"test","userEmail":"jji@aju.co.kr","ivrCalldata":"**************************","query":"1234"}
+[17:38:30.274] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : -----------------another Pattern--------------------
+[17:38:30.274] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : testMaksing ---->>>> {"phoneNumber":"***********", phoneNumber=***********, ivrCalldata=********************)
+[17:38:30.274] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : testMaksing2 ---->>>> {"ivrCalldata":"***********************",ivrCalldata=*********************, phoneNumber=*******)
+[17:38:30.275] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : testMaksing3 ---->>>> {"addtnlInfoVal=********************************************************************************************************************)
+[17:38:30.275] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : testMaksing4 ---->>>> {"addtnlInfoVal=********************************************************************************************************************, test=12123^123)
+[17:38:30.275] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : testMaksing5 ---->>>> {"addtnlInfoVal=********************************************************************************************************)
+[17:38:30.276] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : testMaksing6 ---->>>> {"addtnlInfoVal=********************************************************************************************************, test=12123^123)
+[17:38:30.276] [http-nio-8080-exec-3] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[17:59:46.626] [HikariPool-1 housekeeper] [WARN ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m11s572ms).
+[17:59:49.246] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.JoinController   : -----------------companyPeople !!!!!! -----------------
+[17:59:49.257] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.JoinController   : joinList --->>>> [PeopleDto(companyName=QMS, name=Jeong JeongIn, email=devforin@gmail.con)]
+[17:59:49.258] [http-nio-8080-exec-5] [INFO ] aju.querydsl.controller.JoinController   : -------------------------------------------------------
+[17:59:50.569] [http-nio-8080-exec-6] [INFO ] aju.querydsl.controller.JoinController   : -----------------companyPeople !!!!!! -----------------
+[17:59:50.583] [http-nio-8080-exec-6] [INFO ] aju.querydsl.controller.JoinController   : joinList --->>>> [PeopleDto(companyName=QMS, name=Jeong JeongIn, email=devforin@gmail.con)]
+[17:59:50.583] [http-nio-8080-exec-6] [INFO ] aju.querydsl.controller.JoinController   : -------------------------------------------------------
+[18:00:46.742] [http-nio-8080-exec-7] [INFO ] aju.querydsl.controller.JoinController   : -----------------companyPeople !!!!!! -----------------
+[18:00:46.755] [http-nio-8080-exec-7] [INFO ] aju.querydsl.controller.JoinController   : joinList --->>>> [PeopleDto(companyName=QMS, name=Jeong JeongIn, email=devforin@gmail.con)]
+[18:00:46.755] [http-nio-8080-exec-7] [INFO ] aju.querydsl.controller.JoinController   : -------------------------------------------------------
+[18:01:43.491] [http-nio-8080-exec-8] [INFO ] aju.querydsl.controller.JoinController   : -----------------companyPeople !!!!!! -----------------
+[18:01:43.504] [http-nio-8080-exec-8] [INFO ] aju.querydsl.controller.JoinController   : joinList --->>>> [PeopleDto(companyName=QMS, name=Jeong JeongIn, email=devforin@gmail.con)]
+[18:01:43.505] [http-nio-8080-exec-8] [INFO ] aju.querydsl.controller.JoinController   : -------------------------------------------------------
+[18:02:18.536] [http-nio-8080-exec-9] [INFO ] aju.querydsl.controller.JoinController   : -----------------companyPeople !!!!!! -----------------
+[18:02:18.547] [http-nio-8080-exec-9] [INFO ] aju.querydsl.controller.JoinController   : joinList --->>>> [PeopleDto(companyName=QMS, name=Jeong JeongIn, email=devforin@gmail.con)]
+[18:02:18.548] [http-nio-8080-exec-9] [INFO ] aju.querydsl.controller.JoinController   : -------------------------------------------------------
+[18:02:45.208] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.UserController   : test
+[18:02:45.208] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.UserController   : test
+[18:02:45.208] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.UserController   : -----------------getUser !!!!!! -----------------
+[18:02:45.222] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.UserController   : queryPattern ---->>>> {"userId":1,"userName":"test","userEmail":"jji@aju.co.kr","ivrCalldata":"**************************","query":"1234"}
+[18:02:45.222] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.UserController   : -----------------another Pattern--------------------
+[18:02:45.223] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.UserController   : testMaksing ---->>>> {"phoneNumber":"***********", phoneNumber=***********, ivrCalldata=********************)
+[18:02:45.224] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.UserController   : testMaksing2 ---->>>> {"ivrCalldata":"***********************",ivrCalldata=*********************, phoneNumber=*******)
+[18:02:45.224] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.UserController   : testMaksing3 ---->>>> {"addtnlInfoVal=********************************************************************************************************************)
+[18:02:45.225] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.UserController   : testMaksing4 ---->>>> {"addtnlInfoVal=********************************************************************************************************************, test=12123^123)
+[18:02:45.225] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.UserController   : testMaksing5 ---->>>> {"addtnlInfoVal=********************************************************************************************************)
+[18:02:45.226] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.UserController   : testMaksing6 ---->>>> {"addtnlInfoVal=********************************************************************************************************, test=12123^123)
+[18:02:45.226] [http-nio-8080-exec-10] [INFO ] aju.querydsl.controller.UserController   : ----------------------------------------------------
+[18:16:02.936] [RMI TCP Connection(41)-127.0.0.1] [INFO ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+[18:16:02.941] [RMI TCP Connection(41)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Pausing ProtocolHandler ["http-nio-8080"]
+[18:16:02.941] [RMI TCP Connection(41)-127.0.0.1] [INFO ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+[18:16:02.941] [RMI TCP Connection(41)-127.0.0.1] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[18:16:02.942] [RMI TCP Connection(41)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Stopping ProtocolHandler ["http-nio-8080"]
+[18:16:02.944] [RMI TCP Connection(41)-127.0.0.1] [INFO ] o.a.coyote.http11.Http11NioProtocol      : Destroying ProtocolHandler ["http-nio-8080"]
+[18:16:02.947] [RMI TCP Connection(41)-127.0.0.1] [INFO ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[18:16:02.948] [RMI TCP Connection(41)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[18:16:02.970] [RMI TCP Connection(41)-127.0.0.1] [INFO ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
