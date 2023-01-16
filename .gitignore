@@ -12,8 +12,8 @@ target/
 .settings
 .springBeans
 .sts4-cache
-application.yaml
-logback.xml
+**/application.yaml
+**/logback.xml
 
 
 ### IntelliJ IDEA ###
