@@ -13,7 +13,7 @@ spring:
       matching-strategy: ant-path-matcher
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/qms
+    url: jdbc:mysql://localhost:3306/qmsls
     username: root 
     password: 1234
 # h2:
@@ -21,4 +21,4 @@ spring:
 #    driver-class-name: org.h2.Driver
 #    url: jdbc:h2:tcp://localhost/~/test
 #    username: sa
-#    password: 
+#    password: 111111111111111111111111
