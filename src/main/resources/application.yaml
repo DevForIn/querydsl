@@ -13,7 +13,7 @@ spring:
       matching-strategy: ant-path-matcher
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/qmsls
+    url: jdbc:mysql://localhost:3306/qms
     username: root 
     password: 1234
 # h2:
